@@ -30,7 +30,7 @@
 		"controls":
 		[
 			{"selected_item_details_factory@common.selected_item_details_factory":{"ignored": false}},
-			{"flying_item_renderer@common.flying_item_renderer":{"layer": 6,"ignored": "$ignore_flying_item"}},
+			{"flying_item_renderer@common.flying_item_renderer":{"layer": 20,"ignored": false}},
 			{"inventory_selected_icon_button@common.inventory_selected_icon_button": {}},
 			{
 				"inventory_take_progress_icon_button@common.inventory_take_progress_icon_button":
