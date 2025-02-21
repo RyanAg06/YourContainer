@@ -78,6 +78,11 @@
 					"anchor_to": "top_left",
 					"anchor_from": "top_left",
 					"$background_images|default": "",
+					"$button_ref": "anvil.anvil_output_slot_button",
+					"$focus_id_binding_type": "none",
+					"$focus_id": "anvil_result",
+					"$focus_override_left_binding_type": "none",
+					"$focus_override_left": "anvil_material",
 					"$item_collection_name": "anvil_result_items"
 				}
 			},
