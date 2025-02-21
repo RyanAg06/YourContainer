@@ -1,0 +1,28 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "chest_ender_textures_dx",
+
+	/* Background */
+	"chest_ender":
+	{
+		"type": "panel",
+		"size": [176,167],
+		"controls":
+		[
+			{"ender_eye@anm_colorful_gui_common.ender_eye": {}},
+			{
+				"texture":
+				{
+					"type": "image",
+					"size": [256,256],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"texture": "textures/gui/container/ender_chest"
+				}
+			}
+		]
+	}
+}

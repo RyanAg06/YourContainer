@@ -1,0 +1,27 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "chest_small_textures_dx",
+
+	/* Background */
+	"chest_small":
+	{
+		"type": "panel",
+		"size": [176,167],
+		"controls":
+		[
+			{
+				"texture":
+				{
+					"type": "image",
+					"size": [256,256],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"texture": "textures/gui/container/chest_small"
+				}
+			}
+		]
+	}
+}

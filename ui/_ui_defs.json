@@ -1,0 +1,27 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"ui_defs":
+	[
+		/* Main COntainer */
+		"ui/uibt/yourContainer/container_data/container_panel.json",
+		/* Container Data */
+		"ui/uibt/yourContainer/container_data/anvil.json",
+		"ui/uibt/yourContainer/container_data/barrel.json",
+		"ui/uibt/yourContainer/container_data/cartography_table.json",
+		"ui/uibt/yourContainer/container_data/chest_ender.json",
+		"ui/uibt/yourContainer/container_data/chest_small.json",
+		"ui/uibt/yourContainer/container_data/chest_large.json",
+		"ui/uibt/yourContainer/container_data/shulker_box.json",
+		/* Container Textures */
+		"ui/uibt/yourContainer/container_textures/anvil.json",
+		"ui/uibt/yourContainer/container_textures/barrel.json",
+		"ui/uibt/yourContainer/container_textures/cartography_table.json",
+		"ui/uibt/yourContainer/container_textures/chest_ender.json",
+		"ui/uibt/yourContainer/container_textures/chest_large.json",
+		"ui/uibt/yourContainer/container_textures/chest_small.json",
+		"ui/uibt/yourContainer/container_textures/shulker_box.json"
+	]
+}

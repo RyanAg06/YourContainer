@@ -1,0 +1,106 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "cartography_table_desktop_dx",
+
+	/* Inventory Top Panel */
+	"top_half_panel":
+	{
+		"type": "panel",
+		"controls":
+		[
+			/* Title */
+			{
+				"title_label@cartography.title_label":
+				{
+					"offset": [8,8],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"color": "$vdx_container_title_text_color"
+				}
+			},
+
+			/* Item Name Edit */
+			{
+				"item_name_edit@cartography.text_edit_control":
+				{
+					"size": [110,16],
+					"offset": [7,27],
+					"$text_background_default": "",
+					"$text_background_hover": "",
+					"$text_background_pressed": "",
+					"$text_edit_box_label_anchor_point": "left_middle",
+					"bindings":[{"binding_name": "(not #is_none_mode)","binding_name_override": "#visible"}]
+				}
+			},
+
+			/* Map Images */
+			{
+				"map_images@cartography.map_image_panel":
+				{
+					"offset": [ 51, 51 ],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left"
+				}
+			},
+
+			/* Slots */
+			{
+				"input_item_slot_0@common.container_item":
+				{
+					"offset": [ 7, 51 ],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"$background_images|default": "",
+					"$item_collection_name": "cartography_input_items"
+				}
+			},
+			{
+				"input_item_slot_1@common.container_item":
+				{
+					"offset": [ 7, 99 ],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"$background_images|default": "",
+					"$item_collection_name": "cartography_additional_items"
+				}
+			},
+
+			/* Result Item */
+			{
+				"result_item@common.container_item":
+				{
+					"size": [26,26],
+					"offset": [ -7, 72 ],
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"$background_images|default": "",
+					"$item_collection_name": "cartography_result_items"
+				}
+			}
+		]
+	},
+
+	/* Main Panel */
+	"cartography_table_panel@container_panel_dx.container_panel":
+	{
+		"size": [176,224],
+		"$container_bg": "cartography_table_textures_dx.cartography_table",
+		"$container_top_half": "cartography_table_desktop_dx.top_half_panel",
+		"$container_bottom_half": "container_panel_dx.inventory_panel_bottom_half"
+	},
+
+	/* Screen */
+	"main_screen_content":
+	{
+		"type": "panel",
+		"controls":
+		[
+			{"container_gamepad_helpers@common.container_gamepad_helpers": {}},
+			{"container_modules@container_panel_dx.container_modules": {}},
+			{"cartography_table_panel@cartography_table_desktop_dx.cartography_table_panel": {}}
+		]
+	}
+}

@@ -1,0 +1,55 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "chest_large_desktop_dx",
+
+	/* Inventory Top Panel */
+	"top_half_panel":
+	{
+		"type": "panel",
+		"controls":
+		[
+			/* Title */
+			{
+				"title_label@chest.chest_label":
+				{
+					"offset": [8,6],
+					"color": "$vdx_container_title_text_color"
+				}
+			},
+
+			/* Grid Slots */
+			{
+				"grid_slots@chest.large_chest_grid":
+				{
+					"offset": [7,17],
+					"grid_dimensions": [9,6],
+					"grid_item_template": "container_panel_dx.container_item"
+				}
+			}
+		]
+	},
+
+	/* Main */
+	"chest_large_panel@container_panel_dx.container_panel":
+	{
+		"size": [176,222],
+		"$container_bg": "chest_large_textures_dx.chest_large",
+		"$container_top_half": "chest_large_desktop_dx.top_half_panel",
+		"$container_bottom_half": "container_panel_dx.inventory_panel_bottom_half"
+	},
+
+	/* Screen */
+	"main_screen_content":
+	{
+		"type": "panel",
+		"controls":
+		[
+			{"container_gamepad_helpers@common.container_gamepad_helpers": {}},
+			{"container_modules@container_panel_dx.container_modules": {}},
+			{"chest_large_panel@chest_large_desktop_dx.chest_large_panel": {}}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	/* Colors */
+	"$main_button_default_color": [ 1.0, 1.0, 1.0 ],
+	"$main_button_hover_color": [ 1.0, 1.0, 1.0 ], /* Before [ 1.0, 1.0, 0.62 ] */
+	"$main_button_preesed_color": [ 1.0, 1.0, 1.0 ], /* Before [ 1.0, 1.0, 0.62 ] */
+	"$main_button_locked_color": [ 0.62, 0.62, 0.62 ],
+	"$vdx_inventory_title_text_color": [ 0.3, 0.3, 0.3 ],
+	"$vdx_container_title_text_color": [ 1, 1, 1 ], /* Before [ 0.3, 0.3, 0.3 ] */
+	"$vdx_2x2_crafting_title_text_color": [ 0.3, 0.3, 0.3 ],
+	"$vdx_3x3_crafting_title_text_color": [ 1, 1, 1 ], /* Before [ 0.3, 0.3, 0.3 ] */
+	"$vdx_recipe_title_text_color": [ 0.3, 0.3, 0.3 ],
+	"$cc_default_container_text_color": [ 0.3, 0.3, 0.3 ]
+}
