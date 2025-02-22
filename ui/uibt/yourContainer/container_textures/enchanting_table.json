@@ -1,0 +1,28 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "enchanting_table_textures_dx",
+
+	/* Background */
+	"enchanting_table":
+	{
+		"type": "panel",
+		"size": [176,166],
+		"controls":
+		[
+			{"enchant@anm_colorful_gui_common.enchant": {}},
+			{
+				"texture":
+				{
+					"type": "image",
+					"size": [256,256],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"texture": "textures/gui/container/enchanting_table"
+				}
+			}
+		]
+	}
+}
