@@ -1,0 +1,27 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "inventory_textures_dx",
+
+	/* Background */
+	"inventory":
+	{
+		"type": "panel",
+		"size": [176,166],
+		"controls":
+		[
+			{
+				"texture":
+				{
+					"type": "image",
+					"size": [256,256],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"texture": "textures/gui/container/inventory"
+				}
+			}
+		]
+	}
+}

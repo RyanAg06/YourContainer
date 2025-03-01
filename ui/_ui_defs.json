@@ -16,6 +16,7 @@
 		"ui/uibt/yourContainer/container_data/chest_large.json",
 		"ui/uibt/yourContainer/container_data/shulker_box.json",
 		"ui/uibt/yourContainer/container_data/enchanting_table.json",
+		"ui/uibt/yourContainer/container_data/inventory.json",
 		/* Container Textures */
 		"ui/uibt/yourContainer/container_textures/anvil.json",
 		"ui/uibt/yourContainer/container_textures/barrel.json",
@@ -24,6 +25,7 @@
 		"ui/uibt/yourContainer/container_textures/chest_large.json",
 		"ui/uibt/yourContainer/container_textures/chest_small.json",
 		"ui/uibt/yourContainer/container_textures/shulker_box.json",
-		"ui/uibt/yourContainer/container_textures/enchanting_table.json"
+		"ui/uibt/yourContainer/container_textures/enchanting_table.json",
+		"ui/uibt/yourContainer/container_textures/inventory.json"
 	]
 }

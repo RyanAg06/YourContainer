@@ -5,7 +5,7 @@
 {
 	"namespace": "chest_small_desktop_dx",
 
-	/* Inventory Top Panel */
+	/* Top Panel */
 	"top_half_panel":
 	{
 		"type": "panel",

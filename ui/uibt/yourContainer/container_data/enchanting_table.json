@@ -5,19 +5,14 @@
 {
 	"namespace": "enchanting_table_desktop_dx",
 
-	/* Inventory Top Panel */
+	/* Top Panel */
 	"top_half_panel@enchanting.enchanting_panel_top_half":
 	{
 		"type": "panel",
 		"controls":
 		[
 			/* Title */
-			{
-				"title_label@enchanting.enchanting_label":
-				{
-					"color": "$vdx_container_title_text_color"
-				}
-			},
+			{"title_label@enchanting.enchanting_label": {"color": "$vdx_container_title_text_color"}},
 			
 			/* Book */
 			{
