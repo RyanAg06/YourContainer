@@ -12,7 +12,7 @@
 		"size": [176,167],
 		"controls":
 		[
-			{"ender_eye@anm_colorful_gui_common.ender_eye": {}},
+			{"ender_eye@animations_dx.ender_eye": {}},
 			{
 				"texture":
 				{

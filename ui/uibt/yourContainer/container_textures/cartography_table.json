@@ -12,7 +12,7 @@
 		"size": [176,166],
 		"controls":
 		[
-			{"compass@anm_colorful_gui_common.compass": {}},
+			{"compass@animations_dx.compass": {}},
 			{
 				"texture":
 				{

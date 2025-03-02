@@ -414,7 +414,7 @@
 						{
 							"crafting_arrow@crafting_arrow":
 							{
-								"offset": [46,30],
+								"offset": [46,29],
 								"bindings":
 								[
 									{
@@ -432,7 +432,7 @@
 						{
 							"survival_crafting_output_grid@crafting.output_grid_2x2":
 							{
-								"offset": [64,27],
+								"offset": [64,26],
 								"controls":
 								[
 									{

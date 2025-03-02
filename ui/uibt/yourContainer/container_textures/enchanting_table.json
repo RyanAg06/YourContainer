@@ -12,7 +12,7 @@
 		"size": [176,166],
 		"controls":
 		[
-			{"enchant@anm_colorful_gui_common.enchant": {}},
+			{"enchant@animations_dx.enchant": {}},
 			{
 				"texture":
 				{

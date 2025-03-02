@@ -18,6 +18,7 @@
 		"ui/uibt/yourContainer/container_data/enchanting_table.json",
 		"ui/uibt/yourContainer/container_data/inventory.json",
 		/* Container Textures */
+		"ui/uibt/yourContainer/container_textures/animations.json",
 		"ui/uibt/yourContainer/container_textures/anvil.json",
 		"ui/uibt/yourContainer/container_textures/barrel.json",
 		"ui/uibt/yourContainer/container_textures/cartography_table.json",
