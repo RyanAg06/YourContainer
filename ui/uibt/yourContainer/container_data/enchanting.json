@@ -3,26 +3,31 @@
 	/\  /\
 */
 {
-	"namespace": "enchanting_table_desktop_dx",
+	"namespace": "enchanting_dx",
 
 	/* Top Panel */
-	"top_half_panel@enchanting.enchanting_panel_top_half":
+	"top_half_panel":
 	{
 		"type": "panel",
 		"controls":
 		[
 			/* Title */
-			{"title_label@enchanting.enchanting_label": {"color": "$vdx_container_title_text_color"}},
+			{"title_label@enchanting.enchanting_label":
+				{
+					"offset": [13,1],
+					"color": "$vdx_container_title_text_color"
+				}
+			},
 			
 			/* Book */
 			{
 				"enchanting_book_panel":
 				{
 					"type": "panel",
-					"offset": [13,-13],
 					"size": [40,40],
-					"anchor_from": "left_middle",
-					"anchor_to": "left_middle",
+					"offset": [13,6],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
 					"controls":
 					[
 						{
@@ -48,22 +53,22 @@
 			
 			/* Input Item */
 			{
-				"input_item@container_panel_dx.container_item":
+				"input_item@common_dx.container_item":
 				{
-					"offset": [14,13],
-					"anchor_from": "left_middle",
-					"anchor_to": "left_middle",
+					"offset": [14,46],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
 					"$item_collection_name": "enchanting_input_items"
 				}
 			},
 
 			/* Lapis Item */
 			{
-				"lapis_item@container_panel_dx.container_item":
+				"lapis_item@common_dx.container_item":
 				{
-					"offset": [34,13],
-					"anchor_from": "left_middle",
-					"anchor_to": "left_middle",
+					"offset": [34,46],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
 					"$item_collection_name": "enchanting_lapis_items"
 				}
 			},
@@ -73,8 +78,8 @@
 				"grid_panel":
 				{
 					"type": "panel",
-					"offset": [-8,6],
-					"size": [108,60],
+					"size": [108,59],
+					"offset": [-8,13],
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
 					"controls":
@@ -109,23 +114,10 @@
 		]
 	},
 	
-	/* Main Panel */
-	"enchanting_table_panel@container_panel_dx.container_panel":
+	/* Panel */
+	"enchanting_panel@common_dx.root_panel":
 	{
-		"$container_bg": "enchanting_table_textures_dx.enchanting_table",
-		"$container_top_half": "enchanting_table_desktop_dx.top_half_panel",
-		"$container_bottom_half": "container_panel_dx.inventory_panel_bottom_half"
-	},
-
-	/* Screen */
-	"main_screen_content":
-	{
-		"type": "panel",
-		"controls":
-		[
-			{"container_gamepad_helpers@common.container_gamepad_helpers": {}},
-			{"container_modules@container_panel_dx.container_modules": {}},
-			{"enchanting_table_panel@enchanting_table_desktop_dx.enchanting_table_panel": {}}
-		]
+		"$container_bg": "enchanting_textures_dx.enchanting_table",
+		"$container_top_half": "enchanting_dx.top_half_panel"
 	}
 }

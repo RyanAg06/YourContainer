@@ -3,7 +3,7 @@
 	/\  /\
 */
 {
-	"namespace": "anvil_desktop_dx",
+	"namespace": "anvil_dx",
 
 	/* Top Panel */
 	"top_half_panel":
@@ -37,24 +37,22 @@
 
 			/* Input Item */
 			{
-				"input_item@common.container_item":
+				"input_item@common_dx.container_item":
 				{
 					"offset": [26,46],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"$background_images|default": "",
 					"$item_collection_name": "anvil_input_items"
 				}
 			},
 
 			/* Material Item */
 			{
-				"material_item@common.container_item":
+				"material_item@common_dx.container_item":
 				{
 					"offset": [75,46],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"$background_images|default": "",
 					"$item_collection_name": "anvil_material_items"
 				}
 			},
@@ -72,12 +70,11 @@
 
 			/* Result Item */
 			{
-				"result_item@common.container_item":
+				"result_item@common_dx.container_item":
 				{
 					"offset": [133,46],
 					"anchor_to": "top_left",
 					"anchor_from": "top_left",
-					"$background_images|default": "",
 					"$button_ref": "anvil.anvil_output_slot_button",
 					"$focus_id_binding_type": "none",
 					"$focus_id": "anvil_result",
@@ -109,23 +106,10 @@
 		]
 	},
 
-	/* Main Panel */
-	"anvil_panel@container_panel_dx.container_panel":
+	/* Panel */
+	"anvil_panel@common_dx.root_panel":
 	{
 		"$container_bg": "anvil_textures_dx.anvil",
-		"$container_top_half": "anvil_desktop_dx.top_half_panel",
-		"$container_bottom_half": "container_panel_dx.inventory_panel_bottom_half"
-	},
-
-	/* Screen */
-	"main_screen_content":
-	{
-		"type": "panel",
-		"controls":
-		[
-			{"container_gamepad_helpers@common.container_gamepad_helpers": {}},
-			{"container_modules@container_panel_dx.container_modules": {}},
-			{"anvil_panel@anvil_desktop_dx.anvil_panel": {}}
-		]
+		"$container_top_half": "anvil_dx.top_half_panel"
 	}
 }

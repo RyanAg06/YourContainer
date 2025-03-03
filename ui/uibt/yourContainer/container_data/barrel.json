@@ -3,7 +3,7 @@
 	/\  /\
 */
 {
-	"namespace": "barrel_desktop_dx",
+	"namespace": "barrel_dx",
 	
 	/* Top Panel */
 	"top_half_panel": 
@@ -25,29 +25,16 @@
 				"grid_slots@chest.small_chest_grid":
 				{
 					"offset": [7,17],
-					"grid_item_template": "container_panel_dx.container_item"
+					"grid_item_template": "common_dx.container_item"
 				}
 			}
 		]
 	},
 
-	/* Main */
-	"barrel_panel@container_panel_dx.container_panel":
+	/* Panel */
+	"barrel_panel@common_dx.root_panel":
 	{
 		"$container_bg": "barrel_textures_dx.barrel",
-		"$container_top_half": "barrel_desktop_dx.top_half_panel",
-		"$container_bottom_half": "container_panel_dx.inventory_panel_bottom_half"
-	},
-
-	/* Screen */
-	"main_screen_content":
-	{
-		"type": "panel",
-		"controls":
-		[
-			{"container_gamepad_helpers@common.container_gamepad_helpers": {}},
-			{"container_modules@container_panel_dx.container_modules": {}},
-			{"barrel_panel@barrel_desktop_dx.barrel_panel": {}}
-		]
+		"$container_top_half": "barrel_dx.top_half_panel"
 	}
 }

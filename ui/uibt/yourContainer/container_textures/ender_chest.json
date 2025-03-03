@@ -3,16 +3,16 @@
 	/\  /\
 */
 {
-	"namespace": "enchanting_table_textures_dx",
+	"namespace": "ender_chest_textures_dx",
 
 	/* Background */
-	"enchanting_table":
+	"ender_chest":
 	{
 		"type": "panel",
 		"size": [176,166],
 		"controls":
 		[
-			{"enchant@animations_dx.enchant": {}},
+			{"ender_eye@animations_dx.ender_eye": {}},
 			{
 				"texture":
 				{
@@ -20,7 +20,7 @@
 					"size": [256,256],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"texture": "textures/gui/container/enchanting_table"
+					"texture": "textures/gui/container/ender_chest"
 				}
 			}
 		]

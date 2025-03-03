@@ -3,16 +3,15 @@
 	/\  /\
 */
 {
-	"namespace": "chest_ender_textures_dx",
+	"namespace": "large_chest_textures_dx",
 
 	/* Background */
-	"chest_ender":
+	"large_chest":
 	{
 		"type": "panel",
-		"size": [176,167],
+		"size": [176,222],
 		"controls":
 		[
-			{"ender_eye@animations_dx.ender_eye": {}},
 			{
 				"texture":
 				{
@@ -20,7 +19,7 @@
 					"size": [256,256],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"texture": "textures/gui/container/ender_chest"
+					"texture": "textures/gui/container/large_chest"
 				}
 			}
 		]

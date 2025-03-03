@@ -1,0 +1,81 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "smoker_textures_dx",
+
+	/* Background */
+	"smoker":
+	{
+		"type": "panel",
+		"size": [176,166],
+		"controls":
+		[
+			{
+				"texture":
+				{
+					"type": "image",
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"texture": "textures/gui/container/smoker",
+					"size": [256,256]
+				}
+			}
+		]
+	},
+
+	/* Burn Progress */
+	"burn_progress":
+	{
+		"type": "panel",
+		"size": [24,16],
+		"controls":
+		[
+			{
+				"texture":
+				{
+					"type": "image",
+					"size": ["100%","100%"],
+					"texture": "textures/gui/sprites/container/smoker/burn_progress",
+					"clip_direction": "left",
+					"bindings":
+					[
+						{
+							"binding_name": "#furnace_arrow_ratio",
+							"binding_name_override": "#clip_ratio",
+							"binding_condition": "always"
+						}
+					]
+				}
+			}
+		]
+	},
+
+	/* Lit Progress */
+	"lit_progress":
+	{
+		"type": "panel",
+		"size": [14,14],
+		"controls":
+		[
+			{
+				"texture":
+				{
+					"type": "image",
+					"size": ["100%","100%"],
+					"texture": "textures/gui/sprites/container/smoker/lit_progress",
+					"clip_direction": "down",
+					"bindings":
+					[
+						{
+							"binding_name": "#furnace_flame_ratio",
+							"binding_name_override": "#clip_ratio",
+							"binding_condition": "always"
+						}
+					]
+				}
+			}
+		]
+	}
+}

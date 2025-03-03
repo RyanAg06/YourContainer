@@ -9,13 +9,15 @@
 		[
 			{
 				"requires": "$desktop_screen",
-				"$screen_content": "cartography_table_desktop_dx.main_screen_content",
+				"$screen_content": "cartography_dx.cartography_panel",
 				"$screen_bg_content": "common.screen_background",
 				"$screen_background_alpha": 0.4
 			},
 			{
 				"requires": "$pocket_screen",
-				"$screen_content": "cartography_pocket.cartography_panel"
+				"$screen_content": "cartography_pocket.cartography_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
 			}
 		]
 	}

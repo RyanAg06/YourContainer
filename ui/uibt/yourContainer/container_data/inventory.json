@@ -211,6 +211,7 @@
 	/* Toolbar_Top Panel */
 	"toolbar_panel@crafting.crafting_root_panel":
 	{
+		"layer": -2,
 		"size": ["100%c",20],
 		"controls":
 		[
@@ -467,13 +468,24 @@
 		]
 	},
 
-	/* Main Panel */
-	"inventory_panel@container_panel_dx.container_panel":
+	/* Panel Bottom */
+	"inventory_panel_bottom_half@common_dx.inventory_panel_bottom_half":
 	{
-		"size": [176,166],
+		"offset": [0,-7],
+		"controls":
+		[
+			{"inventory_label@crafting.inventory_label":{"text": ""}},
+			{"inventory_grid@common.inventory_panel": {"offset": [0,4]}},
+			{"hotbar_grid@common.hotbar_grid_template":{"offset": [0,0]}}
+		]
+	},
+
+	/* Panel */
+	"inventory_panel@common_dx.root_panel":
+	{
+		"$inventory_label": "",
 		"$container_bg": "inventory_textures_dx.inventory",
-		"$container_top_half": "inventory_dx.top_half_panel",
-		"$container_bottom_half": "container_panel_dx.inventory_panel_bottom_half"
+		"$container_top_half": "inventory_dx.top_half_panel"
 	},
 
 	/* Screen */
@@ -497,7 +509,19 @@
 								"size": ["fill","100%"],
 								"controls":
 								[
-									{"close_button@container_panel_dx.close_container_button": {}},
+									{
+										"close_button@common_dx.close_container_button":
+										{
+											"bindings":
+											[
+												{
+													"binding_type": "global",
+													"binding_name": "#is_creative_layout",
+													"binding_name_override": "#visible"
+												}
+											]
+										}
+									},
 									{
 										"gamepad_helper_bumpers@crafting.gamepad_helper_bumpers":
 										{
@@ -550,9 +574,9 @@
 											"bindings":
 											[
 												{
-												"binding_type": "global",
-												"binding_name": "#is_creative_layout",
-												"binding_name_override": "#visible"
+													"binding_type": "global",
+													"binding_name": "#is_creative_layout",
+													"binding_name_override": "#visible"
 												}
 											]
 										}

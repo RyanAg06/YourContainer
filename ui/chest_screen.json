@@ -3,38 +3,21 @@
 	/\  /\
 */
 {
-	/* Small Chest */
-	"small_chest_screen":
+	/* Barrel */
+	"barrel_screen":
 	{
 		"variables":
 		[
 			{
 				"requires": "$desktop_screen",
-				"$screen_content": "chest_small_desktop_dx.main_screen_content",
+				"$screen_content": "barrel_dx.barrel_panel",
 				"$screen_bg_content": "common.screen_background",
 				"$screen_background_alpha": 0.4
 			},
 			{
 				"requires": "$pocket_screen",
-				"$screen_content": "pocket_containers.small_chest_panel"
-			}
-		]
-	},
-
-	/* Large Chest */
-	"large_chest_screen":
-	{
-		"variables":
-		[
-			{
-				"requires": "$desktop_screen",
-				"$screen_content": "chest_large_desktop_dx.main_screen_content",
-				"$screen_bg_content": "common.screen_background",
-				"$screen_background_alpha": 0.4
-			},
-			{
-				"requires": "$pocket_screen",
-				"$screen_content": "pocket_containers.large_chest_panel"
+				"$use_custom_pocket_toast": true,
+				"$screen_content": "pocket_containers.barrel_panel"
 			}
 		]
 	},
@@ -46,13 +29,33 @@
 		[
 			{
 				"requires": "$desktop_screen",
-				"$screen_content": "chest_ender_desktop_dx.main_screen_content",
+				"$screen_content": "ender_chest_dx.ender_chest_panel",
 				"$screen_bg_content": "common.screen_background",
 				"$screen_background_alpha": 0.4
 			},
 			{
 				"requires": "$pocket_screen",
+				"$use_custom_pocket_toast": true,
 				"$screen_content": "pocket_containers.ender_chest_panel"
+			}
+		]
+	},
+
+	/* Large Chest */
+	"large_chest_screen":
+	{
+		"variables":
+		[
+			{
+				"requires": "$desktop_screen",
+				"$screen_content": "large_chest_dx.large_chest_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$use_custom_pocket_toast": true,
+				"$screen_content": "pocket_containers.large_chest_panel"
 			}
 		]
 	},
@@ -64,31 +67,33 @@
 		[
 			{
 				"requires": "$desktop_screen",
-				"$screen_content": "shulker_box_desktop_dx.main_screen_content",
+				"$screen_content": "shulker_box_dx.shulker_box_panel",
 				"$screen_bg_content": "common.screen_background",
 				"$screen_background_alpha": 0.4
 			},
 			{
 				"requires": "$pocket_screen",
+				"$use_custom_pocket_toast": true,
 				"$screen_content": "pocket_containers.shulker_box_panel"
 			}
 		]
 	},
 
-	/* Barrel Chest */
-	"barrel_screen":
+	/* Small Chest */
+	"small_chest_screen":
 	{
 		"variables":
 		[
 			{
 				"requires": "$desktop_screen",
-				"$screen_content": "barrel_desktop_dx.main_screen_content",
+				"$screen_content": "small_chest_dx.small_chest_panel",
 				"$screen_bg_content": "common.screen_background",
 				"$screen_background_alpha": 0.4
 			},
 			{
 				"requires": "$pocket_screen",
-				"$screen_content": "pocket_containers.barrel_panel"
+				"$use_custom_pocket_toast": true,
+				"$screen_content": "pocket_containers.small_chest_panel"
 			}
 		]
 	}

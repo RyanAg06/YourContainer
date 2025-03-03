@@ -3,15 +3,16 @@
 	/\  /\
 */
 {
-	"namespace": "chest_small_textures_dx",
+	"namespace": "enchanting_textures_dx",
 
 	/* Background */
-	"chest_small":
+	"enchanting_table":
 	{
 		"type": "panel",
-		"size": [176,167],
+		"size": [176,166],
 		"controls":
 		[
+			{"enchant@animations_dx.enchant": {}},
 			{
 				"texture":
 				{
@@ -19,7 +20,7 @@
 					"size": [256,256],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"texture": "textures/gui/container/chest_small"
+					"texture": "textures/gui/container/enchanting"
 				}
 			}
 		]

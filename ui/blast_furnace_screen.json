@@ -3,19 +3,21 @@
 	/\  /\
 */
 {
-	"enchanting_screen":
+	"blast_furnace_screen":
 	{
 		"variables":
 		[
 			{
 				"requires": "$desktop_screen",
-				"$screen_content": "enchanting_dx.enchanting_panel",
+				"$is_blast_furnace": true,
+				"$screen_content": "blast_furnace_dx.blast_furnace_panel",
 				"$screen_bg_content": "common.screen_background",
-				"$screen_background_alpha": 0.4
+				"$screen_background_alpha": 0.4,
+				"$gamepad_cursor": true
 			},
 			{
 				"requires": "$pocket_screen",
-				"$screen_content": "enchanting_pocket.enchanting_panel",
+				"$screen_content": "furnace_pocket.furnace_panel",
 				"$screen_bg_content": "common.screen_background",
 				"$screen_background_alpha": 0.4
 			}

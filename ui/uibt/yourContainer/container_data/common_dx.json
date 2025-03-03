@@ -1,0 +1,140 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "common_dx",
+
+	/* Slot Item */
+	"container_item@common.container_item":
+	{
+		"$background_images": "",
+		"$item_collection_name": "container_items"
+	},
+
+	/* Panel Bottom */
+	"inventory_panel_bottom_half":
+	{
+		"type": "panel",
+		"size": [88,83],
+		"offset": [0,-7],
+		"anchor_from": "bottom_middle",
+		"anchor_to": "bottom_middle",
+		"controls":
+		[
+			{
+				"inventory_label@crafting.inventory_label":
+				{
+					"text": "$inventory_label",
+					"offset": [-35,-3]
+				}
+			},
+			{"inventory_grid@common.inventory_panel": {"offset": [0,4]}},
+			{"hotbar_grid@common.hotbar_grid_template":{"offset": [0,0]}}
+		]
+	},
+
+	/* Panel */
+	"root_panel@common.root_panel":
+	{
+		"$inventory_label": "container.inventory",
+		"$container_bg": "common.empty_panel",
+		"$container_top_half": "common.empty_panel",
+		"$container_bottom_half": "common_dx.inventory_panel_bottom_half",
+		"controls":
+		[
+			/* Custom */
+			{"background@$container_bg": {"layer": -1}},
+			{"top_half@$container_top_half": {}},
+			{"bottom_half@$container_bottom_half": {}},
+			{"close_button@common_dx.close_container_button": {}},
+			/* Default */
+			{"container_gamepad_helpers@common.container_gamepad_helpers": {}},
+			{"selected_item_details_factory@common.selected_item_details_factory": {}},
+			{"item_lock_notification_factory@common.item_lock_notification_factory": {}},
+			{"inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {}},
+			{"inventory_selected_icon_button@common.inventory_selected_icon_button": {}},
+			{"gamepad_cursor@common.gamepad_cursor_button": {}},
+			{"hold_icon@common.inventory_take_progress_icon_button": {}},
+			{"flying_item_renderer@common.flying_item_renderer": { "layer": 15 }}
+		]
+	},
+
+	/* Close Button */
+	"close_container_button":
+	{
+		"type": "panel",
+		"$touch_ref_buttons": "$desktop",
+		"controls":
+		[
+			{
+				"close_button@common.button":
+				{
+					"size": [20,20],
+					"offset": [24,4],
+					"sound_volume": 0.0,
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"$pressed_button_name": "button.menu_exit",
+					"$button_content": "common_dx.cross_icon",
+					"locked_control": "locked",
+					"consume_hover_events": false,
+					"controls":
+					[
+						/* Default */
+						{"default@common_dx.black_button_default": {}},
+
+						/* Hover */
+						{
+							"hover@common_dx.black_button_default":
+							{
+								"texture": "textures/gui/sprites/button/black_button_highlighted",
+								"$text_color": "$main_button_hover_color"
+							}
+						},
+
+						/* Pressed */
+						{
+							"pressed@common_dx.black_button_default":
+							{
+								"texture": "textures/gui/sprites/button/black_button_highlighted_pressed",
+								"$text_color": "$main_button_preesed_color"
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+
+	/* Cross Icon */
+	"cross_icon":
+	{
+		"layer": 3,
+		"type": "image",
+		"size": [16,16],
+		"texture": "textures/gui/sprites/button/cross"
+	},
+
+	/* Base Black Button */
+	"black_button_default":
+	{
+		"type": "image",
+		"size": "$black_button_size",
+		"texture": "textures/gui/sprites/button/black_button",
+		"$button_text|default": "",
+		"$black_button_size|default": ["100%","100%"],
+		"$text_color": "$main_button_default_color",
+		"controls":
+		[
+			{
+				"button_content@$button_content":
+				{
+					"layer": 4,
+					"anchor_from": "center",
+					"anchor_to": "center"
+				}
+			}
+		]
+	}
+}

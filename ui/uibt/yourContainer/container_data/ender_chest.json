@@ -3,8 +3,8 @@
 	/\  /\
 */
 {
-	"namespace": "shulker_box_dx",
-	
+	"namespace": "ender_chest_dx",
+
 	/* Top Panel */
 	"top_half_panel":
 	{
@@ -19,7 +19,7 @@
 					"color": "$vdx_container_title_text_color"
 				}
 			},
-
+			
 			/* Grid Slots */
 			{
 				"grid_slots@chest.small_chest_grid":
@@ -32,9 +32,9 @@
 	},
 
 	/* Panel */
-	"shulker_box_panel@common_dx.root_panel":
+	"ender_chest_panel@common_dx.root_panel":
 	{
-		"$container_bg": "shulker_box_textures_dx.shulker_box",
-		"$container_top_half": "shulker_box_dx.top_half_panel"
+		"$container_bg": "ender_chest_textures_dx.ender_chest",
+		"$container_top_half": "ender_chest_dx.top_half_panel"
 	}
 }

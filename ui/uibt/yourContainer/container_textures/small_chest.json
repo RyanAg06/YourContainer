@@ -3,13 +3,13 @@
 	/\  /\
 */
 {
-	"namespace": "chest_large_textures_dx",
+	"namespace": "small_chest_textures_dx",
 
 	/* Background */
-	"chest_large":
+	"small_chest":
 	{
 		"type": "panel",
-		"size": [176,222],
+		"size": [176,166],
 		"controls":
 		[
 			{
@@ -19,7 +19,7 @@
 					"size": [256,256],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"texture": "textures/gui/container/chest_large"
+					"texture": "textures/gui/container/small_chest"
 				}
 			}
 		]

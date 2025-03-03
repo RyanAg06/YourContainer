@@ -3,7 +3,7 @@
 	/\  /\
 */
 {
-	"namespace": "cartography_table_desktop_dx",
+	"namespace": "cartography_dx",
 
 	/* Top Panel */
 	"top_half_panel":
@@ -48,59 +48,43 @@
 
 			/* Slots */
 			{
-				"input_item_slot_0@common.container_item":
+				"input_item_slot_0@common_dx.container_item":
 				{
 					"offset": [ 7, 51 ],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"$background_images|default": "",
 					"$item_collection_name": "cartography_input_items"
 				}
 			},
 			{
-				"input_item_slot_1@common.container_item":
+				"input_item_slot_1@common_dx.container_item":
 				{
 					"offset": [ 7, 99 ],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"$background_images|default": "",
 					"$item_collection_name": "cartography_additional_items"
 				}
 			},
 
 			/* Result Item */
 			{
-				"result_item@common.container_item":
+				"result_item@common_dx.container_item":
 				{
 					"size": [26,26],
 					"offset": [ -7, 72 ],
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
-					"$background_images|default": "",
 					"$item_collection_name": "cartography_result_items"
 				}
 			}
 		]
 	},
 
-	/* Main Panel */
-	"cartography_table_panel@container_panel_dx.container_panel":
+	/* Panel */
+	"cartography_panel@common_dx.root_panel":
 	{
 		"size": [176,224],
-		"$container_bg": "cartography_table_textures_dx.cartography_table",
-		"$container_top_half": "cartography_table_desktop_dx.top_half_panel",
-		"$container_bottom_half": "container_panel_dx.inventory_panel_bottom_half"
-	},
-
-	/* Screen */
-	"main_screen_content":
-	{
-		"type": "panel",
-		"controls":
-		[
-			{"container_gamepad_helpers@common.container_gamepad_helpers": {}},
-			{"container_modules@container_panel_dx.container_modules": {}},
-			{"cartography_table_panel@cartography_table_desktop_dx.cartography_table_panel": {}}
-		]
+		"$container_bg": "cartography_textures_dx.cartography_table",
+		"$container_top_half": "cartography_dx.top_half_panel"
 	}
 }
