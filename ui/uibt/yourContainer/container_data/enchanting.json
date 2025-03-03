@@ -117,7 +117,7 @@
 	/* Panel */
 	"enchanting_panel@common_dx.root_panel":
 	{
-		"$container_bg": "enchanting_textures_dx.enchanting_table",
+		"$container_bg": "enchanting_textures_dx.enchanting",
 		"$container_top_half": "enchanting_dx.top_half_panel"
 	}
 }

@@ -6,7 +6,7 @@
 	"namespace": "enchanting_textures_dx",
 
 	/* Background */
-	"enchanting_table":
+	"enchanting":
 	{
 		"type": "panel",
 		"size": [176,166],

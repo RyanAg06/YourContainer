@@ -6,7 +6,7 @@
 	"namespace": "cartography_textures_dx",
 
 	/* Background */
-	"cartography_table":
+	"cartography":
 	{
 		"type": "panel",
 		"size": [176,166],
@@ -21,7 +21,7 @@
 					"offset": [0,-29],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"texture": "textures/gui/container/cartography_table"
+					"texture": "textures/gui/container/cartography"
 				}
 			}
 		]
