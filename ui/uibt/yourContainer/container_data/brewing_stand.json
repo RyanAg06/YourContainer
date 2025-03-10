@@ -64,7 +64,7 @@
 			{
 				"bubbles_full_image@brewing_stand.bubbles_full_image":
 				{
-					"offset": [58,13],
+					"offset": [60,13],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left"
 				}
