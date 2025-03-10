@@ -1,0 +1,42 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	"namespace": "grindstone_textures_dx",
+
+	"grindstone":
+	{
+		"type": "panel",
+		"size": [176,166],
+		"controls":
+		[
+			{
+				"texture":
+				{
+					"size": [256,256],
+					"type": "image",
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"texture": "textures/gui/container/grindstone"
+				}
+			}
+		]
+	},
+	"error":
+	{
+		"type": "panel",
+		"size": [28,21],
+		"controls":
+		[
+			{
+				"texture":
+				{
+					"type": "image",
+					"size": ["100%","100%"],
+					"texture": "textures/gui/sprites/container/grindstone/error"
+				}
+			}
+		]
+	}
+}

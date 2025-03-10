@@ -54,7 +54,7 @@
 					"layer": 1,
 					"type": "grid",
 					"size": [18,72],
-					"offset": [8,7],
+					"offset": [10,7],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
 					"grid_dimensions": [1,4],
@@ -125,7 +125,7 @@
 					"layer": 1,
 					"type": "grid",
 					"size": [18,18],
-					"offset": [77,63],
+					"offset": [75,61],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
 					"grid_dimensions": [1,1],
@@ -465,18 +465,6 @@
 					]
 				}
 			}
-		]
-	},
-
-	/* Panel Bottom */
-	"inventory_panel_bottom_half@common_dx.inventory_panel_bottom_half":
-	{
-		"offset": [0,-7],
-		"controls":
-		[
-			{"inventory_label@crafting.inventory_label":{"text": ""}},
-			{"inventory_grid@common.inventory_panel": {"offset": [0,4]}},
-			{"hotbar_grid@common.hotbar_grid_template":{"offset": [0,0]}}
 		]
 	},
 

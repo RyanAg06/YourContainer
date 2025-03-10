@@ -26,11 +26,24 @@
 				"inventory_label@crafting.inventory_label":
 				{
 					"text": "$inventory_label",
-					"offset": [-35,-3]
+					"color": [1,1,1],
+					"offset": [-37,-3]
 				}
 			},
-			{"inventory_grid@common.inventory_panel": {"offset": [0,4]}},
-			{"hotbar_grid@common.hotbar_grid_template":{"offset": [0,0]}}
+			{
+				"inventory_grid@common.inventory_panel":
+				{
+					"offset": [0,6],
+					"$background_images": ""
+				}
+			},
+			{
+				"hotbar_grid@common.hotbar_grid_template":
+				{
+					"offset": [0,0],
+					"$background_images": ""
+				}
+			}
 		]
 	},
 
