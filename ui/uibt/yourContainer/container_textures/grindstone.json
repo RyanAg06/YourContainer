@@ -5,6 +5,7 @@
 {
 	"namespace": "grindstone_textures_dx",
 
+	/* Background */
 	"grindstone":
 	{
 		"type": "panel",
@@ -23,6 +24,8 @@
 			}
 		]
 	},
+
+	/* Arrow */
 	"error":
 	{
 		"type": "panel",

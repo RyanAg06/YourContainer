@@ -1,17 +1,24 @@
-/*File modified by @CrisXolt.
-//(c) Don't use any UI data design without permission!*/
+/*
+	\____/\
+	/\  /\
+*/
 {
-  "grindstone_screen": {
-    "variables": [
-      {
-        "requires": "$desktop_screen",
-        "$screen_content": "grindstone_desktop_dx.center_screen",
-        "$screen_bg_content": "grindstone_desktop_dx.full_screen"
-      },
-      {
-        "requires": "$pocket_screen",
-        "$screen_content": "grindstone_pocket.grindstone_panel"
-      }
-    ]
-  }
+	"grindstone_screen":
+	{
+		"variables":
+		[
+			{
+				"requires": "$desktop_screen",
+				"$screen_content": "grindstone_dx.grindstone_panel",
+				"$screen_bg_content": "common.screen_background",
+        		"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$screen_content": "grindstone_pocket.grindstone_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			}
+		]
+	}
 }

@@ -33,10 +33,20 @@
 	},
 
 	/* Panel */
-	"large_chest_panel@common_dx.root_panel":
+	"large_chest_panel":
 	{
-		"size": [176,222],
-		"$container_bg": "large_chest_textures_dx.large_chest",
-		"$container_top_half": "large_chest_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"size": [176,222],
+					"$container_bg": "large_chest_textures_dx.large_chest",
+					"$container_top_half": "large_chest_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

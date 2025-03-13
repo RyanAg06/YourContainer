@@ -469,14 +469,6 @@
 	},
 
 	/* Panel */
-	"inventory_panel@common_dx.root_panel":
-	{
-		"$inventory_label": "",
-		"$container_bg": "inventory_textures_dx.inventory",
-		"$container_top_half": "inventory_dx.top_half_panel"
-	},
-
-	/* Screen */
 	"main_screen_content":
 	{
 		"type": "panel",
@@ -600,8 +592,11 @@
 
 						// Inventory Panel
 						{
-							"inventory_panel@inventory_dx.inventory_panel":
+							"root_panel@common_dx.root_panel":
 							{
+								"$inventory_label": "",
+								"$container_bg": "inventory_textures_dx.inventory",
+								"$container_top_half": "inventory_dx.top_half_panel",
 								"bindings":
 								[
 									{

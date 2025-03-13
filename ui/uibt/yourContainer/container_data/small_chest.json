@@ -32,9 +32,19 @@
 	},
 
 	/* Panel */
-	"small_chest_panel@common_dx.root_panel":
+	"small_chest_panel":
 	{
-		"$container_bg": "small_chest_textures_dx.small_chest",
-		"$container_top_half": "small_chest_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"$container_bg": "small_chest_textures_dx.small_chest",
+					"$container_top_half": "small_chest_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

@@ -115,9 +115,19 @@
 	},
 	
 	/* Panel */
-	"enchanting_panel@common_dx.root_panel":
+	"enchanting_panel":
 	{
-		"$container_bg": "enchanting_textures_dx.enchanting",
-		"$container_top_half": "enchanting_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"$container_bg": "enchanting_textures_dx.enchanting",
+					"$container_top_half": "enchanting_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

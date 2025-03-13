@@ -5,6 +5,7 @@
 {
 	"namespace": "brewing_stand_textures_dx",
 
+	/* Background */
 	"brewing_stand":
 	{
 		"type": "panel",
@@ -19,106 +20,6 @@
 					"anchor_to": "top_left",
 					"texture": "textures/gui/container/brewing_stand",
 					"size": [256,256]
-				}
-			}
-		]
-	},
-	"brew_progress":
-	{
-		"type": "panel",
-		"size": [9,28],
-		"controls":
-		[
-			{
-				"texture":
-				{
-					"type": "image",
-					"texture": "textures/gui/sprites/container/brewing_stand/brew_progress",
-					"size": ["100%","100%"],
-					"clip_direction": "up",
-					"bindings":
-					[
-						{
-							"binding_name": "#brewing_arrow_ratio",
-							"binding_name_override": "#clip_ratio",
-							"binding_condition": "always"
-						}
-					]
-				}
-			}
-		]
-	},
-	"bottle_empty_image":
-	{
-		"type": "panel",
-		"size": [9,28],
-		"controls":
-		[
-			{
-				"texture":
-				{
-					"type": "image",
-					"texture": "textures/gui/sprites/container/brewing_stand/bottle_empty",
-					"size": ["100%","100%"],
-					"clip_direction": "up",
-					"bindings":
-					[
-						{
-							"binding_name": "#brewing_bottle_ratio",
-							"binding_name_override": "#clip_ratio",
-							"binding_condition": "always"
-						}
-					]
-				}
-			}
-		]
-	},
-	"bubbles":
-	{
-		"type": "panel",
-		"size": [12,29],
-		"controls":
-		[
-			{
-				"texture":
-				{
-					"type": "image",
-					"texture": "textures/gui/sprites/container/brewing_stand/bubbles",
-					"size": ["100%","100%"],
-					"clip_direction": "down",
-					"bindings":
-					[
-						{
-							"binding_name": "#brewing_bubbles_ratio",
-							"binding_name_override": "#clip_ratio",
-							"binding_condition": "always"
-						}
-					]
-				}
-			}
-		]
-	},
-	"fuel_length":
-	{
-		"type": "panel",
-		"size": [18,4],
-		"controls":
-		[
-			{
-				"texture":
-				{
-					"type": "image",
-					"texture": "textures/gui/sprites/container/brewing_stand/fuel_length",
-					"size": ["100%","100%"],
-					"clip_direction": "left",
-					"bindings":
-					[
-						{
-							"binding_name": "#brewing_fuel_ratio",
-							"binding_name_override": "#clip_ratio",
-							"binding_condition": "always"
-						}
-					]
 				}
 			}
 		]

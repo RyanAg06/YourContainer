@@ -81,10 +81,20 @@
 	},
 
 	/* Panel */
-	"cartography_panel@common_dx.root_panel":
+	"cartography_panel":
 	{
-		"size": [176,224],
-		"$container_bg": "cartography_textures_dx.cartography",
-		"$container_top_half": "cartography_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"size": [176,224],
+					"$container_bg": "cartography_textures_dx.cartography",
+					"$container_top_half": "cartography_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

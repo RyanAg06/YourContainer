@@ -47,7 +47,7 @@
 		]
 	},
 
-	/* Panel */
+	/* Root Panel */
 	"root_panel@common.root_panel":
 	{
 		"$inventory_label": "container.inventory",

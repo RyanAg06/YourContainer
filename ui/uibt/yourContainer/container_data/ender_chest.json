@@ -32,9 +32,19 @@
 	},
 
 	/* Panel */
-	"ender_chest_panel@common_dx.root_panel":
+	"ender_chest_panel":
 	{
-		"$container_bg": "ender_chest_textures_dx.ender_chest",
-		"$container_top_half": "ender_chest_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"$container_bg": "ender_chest_textures_dx.ender_chest",
+					"$container_top_half": "ender_chest_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

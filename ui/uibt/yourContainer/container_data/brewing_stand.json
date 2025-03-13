@@ -104,9 +104,19 @@
 	},
 
 	/* Panel */
-	"brewing_stand_panel@common_dx.root_panel":
+	"brewing_stand_panel":
 	{
-		"$container_bg": "brewing_stand_textures_dx.brewing_stand",
-		"$container_top_half": "brewing_stand_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"$container_bg": "brewing_stand_textures_dx.brewing_stand",
+					"$container_top_half": "brewing_stand_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

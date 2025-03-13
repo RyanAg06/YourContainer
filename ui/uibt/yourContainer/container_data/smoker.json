@@ -94,9 +94,19 @@
 	},
 
 	/* Panel */
-	"smoker_panel@common_dx.root_panel":
+	"smoker_panel":
 	{
-		"$container_bg": "smoker_textures_dx.smoker",
-		"$container_top_half": "smoker_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"$container_bg": "smoker_textures_dx.smoker",
+					"$container_top_half": "smoker_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

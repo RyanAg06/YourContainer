@@ -32,9 +32,19 @@
 	},
 
 	/* Panel */
-	"shulker_box_panel@common_dx.root_panel":
+	"shulker_box_panel":
 	{
-		"$container_bg": "shulker_box_textures_dx.shulker_box",
-		"$container_top_half": "shulker_box_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"$container_bg": "shulker_box_textures_dx.shulker_box",
+					"$container_top_half": "shulker_box_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }

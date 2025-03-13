@@ -94,9 +94,19 @@
 	},
 
 	/* Panel */
-	"blast_furnace_panel@common_dx.root_panel":
+	"blast_furnace_panel":
 	{
-		"$container_bg": "blast_furnace_textures_dx.blast_furnace",
-		"$container_top_half": "blast_furnace_dx.top_half_panel"
+		"type":"panel",
+		"controls": 
+		[
+			{ "selected_item_details_factory@common.selected_item_details_factory": {} },
+			{
+				"root_panel@common_dx.root_panel":
+				{
+					"$container_bg": "blast_furnace_textures_dx.blast_furnace",
+					"$container_top_half": "blast_furnace_dx.top_half_panel"
+				}
+			}
+		]
 	}
 }
