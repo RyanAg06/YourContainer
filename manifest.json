@@ -8,6 +8,24 @@
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 16, 0]
 	},
+	"subpacks":
+	[
+		{
+			"folder_name": "colorful_container",
+			"name": "Colorful Container",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "gui_revision",
+			"name": "GUI Revision",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "your_container",
+			"name": "Your Container",
+			"memory_tier": 1
+		}
+	],
 	"modules":
 	[
 		{

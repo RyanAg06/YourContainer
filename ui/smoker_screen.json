@@ -3,23 +3,5 @@
 	/\  /\
 */
 {
-	"smoker_screen":
-	{
-		"variables":
-		[
-			{
-				"requires": "$desktop_screen",
-				"$is_smoker": true,
-				"$screen_content": "smoker_dx.smoker_panel",
-				"$screen_bg_content": "common.screen_background",
-				"$screen_background_alpha": 0.4,
-				"$gamepad_cursor": true
-			},
-			{
-				"requires": "$pocket_screen",
-				"$screen_content": "furnace_pocket.furnace_panel",
-				"$gamepad_cursor": false
-			}
-		]
-	}
+	"smoker_screen@furnace.furnace_screen": {"$custom_panel": "common.smoker_panel"}
 }

@@ -3,15 +3,48 @@
 	/\  /\
 */
 {
-	/* Colors */
-	"$main_button_default_color": [ 1.0, 1.0, 1.0 ],
-	"$main_button_hover_color": [ 1.0, 1.0, 1.0 ],
-	"$main_button_preesed_color": [ 1.0, 1.0, 1.0 ],
-	"$main_button_locked_color": [ 0.62, 0.62, 0.62 ],
-	"$vdx_inventory_title_text_color": [ 0.3, 0.3, 0.3 ],
-	"$vdx_container_title_text_color": [ 1, 1, 1 ],
-	"$vdx_2x2_crafting_title_text_color": [ 0.3, 0.3, 0.3 ],
-	"$vdx_3x3_crafting_title_text_color": [ 1, 1, 1 ],
-	"$vdx_recipe_title_text_color": [ 0.3, 0.3, 0.3 ],
-	"$cc_default_container_text_color": [ 0.3, 0.3, 0.3 ]
+
+	/* Anvil */
+	"$anvil_inventory_slots_offset": [0, 3],
+	"$anvil_hotbar_offset": [0, -3],
+
+	/* Brewing Stand */
+	"$brewing_inventory_offset": [0, 3],
+	"$brewing_hotbar_offset": [0, -3],
+
+	/* Cartography Table */
+	"$cartography_inventory_offset": [0, -1],
+	"$cartography_hotbar_offset": [0, -7],
+
+	/* Crafting Table */
+	"$crafting_inventory_offset": [0, -1],
+	"$crafting_hotbar_offset": [0, -7],
+
+	/* Enchanting Table */
+	"$enchant_inventory_offset": [0, 3],
+	"$enchant_hotbar_offset": [0, -3],
+
+	/* Furnace */
+	"$furnace_inventory_offset": [0, 3],
+	"$furnace_hotbar_offset": [0, -3],
+
+	/* Grindstone */
+	"$grindstone_inventory_offset": [0, 3],
+	"$grindstone_hotbar_offset": [0, -3],
+
+	/* Large Chest */
+	"$large_chest_inventory_offset": [0 , 3],
+	"$large_chest_hotbar_offset": [0, -3],
+
+	/* Player Inventory */
+	"$pi_inventory_offset": [0, -1],
+    "$pi_hotbar_offset": [0, -7],
+
+	/* Small Chest */
+	"$small_chest_inventory_offset": [0, 3],
+	"$small_chest_hotbar_offset": [0, -3],
+
+	/* Smithing Table */
+	"$smithing_inventory_offset": [0, 3],
+	"$smithing_hotbar_offset": [0, -3]
 }
