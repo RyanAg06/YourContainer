@@ -18,7 +18,7 @@
 					"offset": [60,5],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"color": "$vdx_container_title_text_color"
+					"color": [1,1,1]
 				}
 			},
 

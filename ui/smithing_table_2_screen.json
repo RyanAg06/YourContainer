@@ -9,6 +9,18 @@
 		"type": "panel",
 		"controls":
 		[
+			/* Title */
+			{
+				"upgrade_label@smithing_table.upgrade_label":
+				{
+					"offset": [45,2],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"color": [1,1,1]
+				}
+			},
+
+			/* Input Panel */
 			{
 				"input_stack_panel":
 				{
@@ -20,6 +32,7 @@
 					"anchor_to": "top_left",
 					"controls":
 					[
+						/* Template Item */
 						{
 							"template_item_slot@smithing_table_2.smithing_table_item_slot":
 							{
@@ -33,6 +46,8 @@
 								"$focus_override_right": "smithing_table_input"
 							}
 						},
+
+						/* Input Item */
 						{
 							"input_item_slot@smithing_table_2.smithing_table_item_slot":
 							{
@@ -48,6 +63,8 @@
 								"$focus_override_left": "smithing_table_template"
 							}
 						},
+
+						/* Material Item */
 						{
 							"material_item_slot@smithing_table_2.smithing_table_item_slot":
 							{
@@ -66,6 +83,32 @@
 					]
 				}
 			},
+
+			/* Arrow */
+			{
+				"arrow_icon":
+				{
+					"type": "panel",
+					"size": [28,21],
+					"offset": [58,43],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"controls":
+					[
+						{
+							"texture":
+							{
+								"type": "image",
+								"size": ["100%","100%"],
+								"texture": "textures/gui/sprites/container/smithing/error"
+							}
+						}
+					],
+					"bindings": [{"binding_name": "#cross_out_icon","binding_name_override": "#visible"}]
+				}
+			},
+
+			/* Result Item */
 			{
 				"result_item_slot@smithing_table_2.smithing_table_item_slot":
 				{
@@ -81,6 +124,8 @@
 					"$focus_override_left": "smithing_table_material"
 				}
 			},
+
+			/* Preview Armor Stand */
 			{
 				"armor_stand_renderer@smithing_table_2.result_item_preview_inner":
 				{

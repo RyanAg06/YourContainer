@@ -11,13 +11,8 @@
 	"subpacks":
 	[
 		{
-			"folder_name": "colorful_container",
-			"name": "Colorful Container",
-			"memory_tier": 1
-		},
-		{
-			"folder_name": "gui_revision",
-			"name": "GUI Revision",
+			"folder_name": "vanilla",
+			"name": "Vanilla",
 			"memory_tier": 1
 		},
 		{

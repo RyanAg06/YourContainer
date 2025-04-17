@@ -17,8 +17,8 @@
 	"$cartography_hotbar_offset": [0, -7],
 
 	/* Crafting Table */
-	"$crafting_inventory_offset": [0, -1],
-	"$crafting_hotbar_offset": [0, -7],
+	"$crafting_inventory_offset": [0, 0],
+	"$crafting_hotbar_offset": [0, -5],
 
 	/* Enchanting Table */
 	"$enchant_inventory_offset": [0, 3],
@@ -37,8 +37,8 @@
 	"$large_chest_hotbar_offset": [0, -3],
 
 	/* Player Inventory */
-	"$pi_inventory_offset": [0, -1],
-    "$pi_hotbar_offset": [0, -7],
+	"$pi_inventory_offset": [0, 0],
+    "$pi_hotbar_offset": [0, -5],
 
 	/* Small Chest */
 	"$small_chest_inventory_offset": [0, 3],

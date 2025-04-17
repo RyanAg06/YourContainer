@@ -126,12 +126,13 @@
     "crafting_panel_2x2": {"offset":[1,-1]},
     "output_grid_2x2/work_bench_output": {"$background_images": ""},
     "output_grid_3x3/work_bench_output": {"$background_images": ""},
-    "work_bench_panel_3x3/inventory_label": {"offset": [-22, 75]},
+    "work_bench_panel_3x3/inventory_label": {"offset": [-22, 76], "color": [1,1,1]},
     "work_bench_panel_3x3/work_bench_output_grid": {"offset": [90,30]},
     "crafting_input_grid_item@crafting.inventory_container_item": {"$background_images": ""},
 
     /* Crafting Table */
     "crafting_screen": {"$screen_content": "crafting.crafting_table_screen"},
+    "crafting_label": {"color": [1,1,1]},
     "crafting_table_screen": 
     {
         "type": "panel",
