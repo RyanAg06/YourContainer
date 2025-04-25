@@ -24,10 +24,10 @@
 			{
 				"input_stack_panel":
 				{
-					"size": [54, 18],
+					"size": [54,18],
 					"type": "grid",
-					"grid_dimensions": [3, 1],
-					"offset": [0, 44],
+					"grid_dimensions": [3,1],
+					"offset": [0,44],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
 					"controls":
@@ -36,7 +36,7 @@
 						{
 							"template_item_slot@smithing_table_2.smithing_table_item_slot":
 							{
-								"grid_position": [0, 0],
+								"grid_position": [0,0],
 								"$background_images": "",
 								"$item_collection_name": "smithing_table_template_items",
           						"$cell_overlay_ref": "smithing_table_2.template_overlay_image",
@@ -51,7 +51,7 @@
 						{
 							"input_item_slot@smithing_table_2.smithing_table_item_slot":
 							{
-								"grid_position": [1, 0],
+								"grid_position": [1,0],
 								"$background_images": "",
 								"$item_collection_name": "smithing_table_input_items",
 								"$cell_overlay_ref": "smithing_table_2.input_overlay_image",
@@ -68,7 +68,7 @@
 						{
 							"material_item_slot@smithing_table_2.smithing_table_item_slot":
 							{
-								"grid_position": [2, 0],
+								"grid_position": [2,0],
 								"$background_images": "",
 								"$item_collection_name": "smithing_table_material_items",
 								"$cell_overlay_ref": "smithing_table_2.material_overlay_image",
@@ -112,7 +112,7 @@
 			{
 				"result_item_slot@smithing_table_2.smithing_table_item_slot":
 				{
-					"offset": [18, 18],
+					"offset": [18,18],
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
 					"$background_images": "",
@@ -131,8 +131,8 @@
 				{
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
-					"size": [25.5, 25.5],
-					"offset": [-19, 35]
+					"size": [25.5,25.5],
+					"offset": [-19,35]
 				}
 			}
 		]
@@ -155,6 +155,6 @@
 			}
 		]
 	},
-	"smithing_table_panel/root_panel/smithing_table_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$smithing_inventory_offset"},
-	"smithing_table_panel/root_panel/smithing_table_screen_inventory/hotbar_grid": {"$background_images": "", "offset": "$smithing_hotbar_offset"}
+	"smithing_table_panel/root_panel/smithing_table_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$smithing_inventory_offset"},
+	"smithing_table_panel/root_panel/smithing_table_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$smithing_hotbar_offset"}
 }

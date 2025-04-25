@@ -57,6 +57,7 @@
 	/* Custom Panel */
 	"custom_panel":
 	{
+		"$custom_animation": "",
 		"$texture_bg": "",
 		"type": "panel",
 		"size": [176,166],
@@ -73,23 +74,25 @@
 					"texture": "$texture_bg"
 				}
 			},
+			{"animation@$custom_animation": {}},
 			{"close_button@common.close_container_button": {}}
 		]
 	},
 	"small_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/small_chest"},
 	"large_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/large_chest","size": [176,220]},
-	"ender_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/ender_chest"},
+	"ender_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/ender_chest","$custom_animation": "animations_ui.ender_eye"},
 	"shulker_box_panel@custom_panel": {"$texture_bg": "textures/gui/container/shulker_box"},
 	"barrel_panel@custom_panel": {"$texture_bg": "textures/gui/container/barrel"},
 	"player_inventory_panel@custom_panel": {"$texture_bg": "textures/gui/container/inventory"},
 	"crafting_table_panel@custom_panel": {"$texture_bg": "textures/gui/container/crafting_table"},
 	"anvil_panel@custom_panel": {"$texture_bg": "textures/gui/container/anvil"},
-	"cartography_panel@custom_panel": {"$texture_bg": "textures/gui/container/cartography"},
-	"enchanting_panel@custom_panel": {"$texture_bg": "textures/gui/container/enchanting_table"},
+	"cartography_panel@custom_panel": {"$texture_bg": "textures/gui/container/cartography","$custom_animation": "animations_ui.compass"},
+	"enchanting_panel@custom_panel": {"$texture_bg": "textures/gui/container/enchanting_table","$custom_animation": "animations_ui.enchant"},
 	"furnace_panel@custom_panel": {"$texture_bg": "textures/gui/container/furnace"},
 	"blast_furnace_panel@custom_panel": {"$texture_bg": "textures/gui/container/blast_furnace"},
 	"smoker_panel@custom_panel": {"$texture_bg": "textures/gui/container/smoker"},
 	"brewing_panel@custom_panel": {"$texture_bg": "textures/gui/container/brewing_stand"},
 	"grindstone_panel@custom_panel": {"$texture_bg": "textures/gui/container/grindstone"},
-	"smithing_panel@custom_panel": {"$texture_bg": "textures/gui/container/smithing"}
+	"smithing_panel@custom_panel": {"$texture_bg": "textures/gui/container/smithing"},
+	"beacon_panel@custom_panel": {"$texture_bg": "textures/gui/container/beacon","size": [214,221]}
 }

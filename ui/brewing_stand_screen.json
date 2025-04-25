@@ -114,6 +114,6 @@
 			}
 		]
 	},
-	"brewing_stand_panel/root_panel/furnace_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$brewing_inventory_offset"},
-	"brewing_stand_panel/root_panel/furnace_screen_inventory/hotbar_grid": {"$background_images": "", "offset": "$brewing_hotbar_offset"}
+	"brewing_stand_panel/root_panel/furnace_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$brewing_inventory_offset"},
+	"brewing_stand_panel/root_panel/furnace_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$brewing_hotbar_offset"}
 }

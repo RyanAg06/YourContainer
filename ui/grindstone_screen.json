@@ -113,6 +113,6 @@
 			}
 		]
 	},
-	"grindstone_panel/root_panel/grindstone_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$grindstone_inventory_offset"},
-	"grindstone_panel/root_panel/grindstone_screen_inventory/hotbar_grid": {"$background_images": "", "offset": "$grindstone_hotbar_offset"}
+	"grindstone_panel/root_panel/grindstone_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$grindstone_inventory_offset"},
+	"grindstone_panel/root_panel/grindstone_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$grindstone_hotbar_offset"}
 }

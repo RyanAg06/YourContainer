@@ -5,46 +5,55 @@
 {
 
 	/* Anvil */
-	"$anvil_inventory_slots_offset": [0, 3],
-	"$anvil_hotbar_offset": [0, -3],
+	"$anvil_inventory_slots_offset": [0,3],
+	"$anvil_hotbar_offset": [0,-3],
+
+	/* Beacon */
+	"$beacon_inventory_slots_offset": [0,3],
+	"$beacon_hotbar_offset": [0,-3],
 
 	/* Brewing Stand */
-	"$brewing_inventory_offset": [0, 3],
-	"$brewing_hotbar_offset": [0, -3],
+	"$brewing_inventory_offset": [0,3],
+	"$brewing_hotbar_offset": [0,-3],
 
 	/* Cartography Table */
-	"$cartography_inventory_offset": [0, -1],
-	"$cartography_hotbar_offset": [0, -7],
+	"$cartography_inventory_offset": [0,-1],
+	"$cartography_hotbar_offset": [0,-7],
+	"$cartography_caompass_offset": [-7,10],
 
 	/* Crafting Table */
-	"$crafting_inventory_offset": [0, 0],
-	"$crafting_hotbar_offset": [0, -5],
+	"$crafting_inventory_offset": [0,0],
+	"$crafting_hotbar_offset": [0,-5],
 
 	/* Enchanting Table */
-	"$enchant_inventory_offset": [0, 3],
-	"$enchant_hotbar_offset": [0, -3],
+	"$enchant_inventory_offset": [0,3],
+	"$enchant_hotbar_offset": [0,-3],
+	"$enchant_input_item_loop_offset": [15,51],
+
+	/* Ender Chest */
+	"$ender_eye_offset": [83,9],
 
 	/* Furnace */
-	"$furnace_inventory_offset": [0, 3],
-	"$furnace_hotbar_offset": [0, -3],
+	"$furnace_inventory_offset": [0,3],
+	"$furnace_hotbar_offset": [0,-3],
 
 	/* Grindstone */
-	"$grindstone_inventory_offset": [0, 3],
-	"$grindstone_hotbar_offset": [0, -3],
+	"$grindstone_inventory_offset": [0,3],
+	"$grindstone_hotbar_offset": [0,-3],
 
 	/* Large Chest */
-	"$large_chest_inventory_offset": [0 , 3],
-	"$large_chest_hotbar_offset": [0, -3],
+	"$large_chest_inventory_offset": [0,3],
+	"$large_chest_hotbar_offset": [0,-3],
 
 	/* Player Inventory */
-	"$pi_inventory_offset": [0, 0],
-    "$pi_hotbar_offset": [0, -5],
+	"$pi_inventory_offset": [0,0],
+    "$pi_hotbar_offset": [0,-5],
 
 	/* Small Chest */
-	"$small_chest_inventory_offset": [0, 3],
-	"$small_chest_hotbar_offset": [0, -3],
+	"$small_chest_inventory_offset": [0,3],
+	"$small_chest_hotbar_offset": [0,-3],
 
 	/* Smithing Table */
-	"$smithing_inventory_offset": [0, 3],
-	"$smithing_hotbar_offset": [0, -3]
+	"$smithing_inventory_offset": [0,3],
+	"$smithing_hotbar_offset": [0,-3]
 }

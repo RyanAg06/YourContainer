@@ -132,6 +132,6 @@
 			}
 		]
 	},
-	"anvil_panel/root_panel/anvil_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$anvil_inventory_slots_offset"},
-	"anvil_panel/root_panel/anvil_screen_inventory/hotbar_grid": {"$background_images": "", "offset": "$anvil_hotbar_offset"}
+	"anvil_panel/root_panel/anvil_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$anvil_inventory_slots_offset"},
+	"anvil_panel/root_panel/anvil_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$anvil_hotbar_offset"}
 }

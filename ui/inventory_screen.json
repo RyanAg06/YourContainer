@@ -117,8 +117,8 @@
         [
             {"common_panel@$custom_panel": {"offset": [0,-4]}},
             {"inventory_panel_top_half@$top_half_variant": {}},
-            {"inventory_panel_bottom_half@common.inventory_panel_bottom_half": {"$background_images": "", "offset": "$pi_inventory_offset"}},
-            {"hotbar_grid@common.hotbar_grid_template": {"$background_images": "", "offset": "$pi_hotbar_offset"}}
+            {"inventory_panel_bottom_half@common.inventory_panel_bottom_half": {"$background_images": "","offset": "$pi_inventory_offset"}},
+            {"hotbar_grid@common.hotbar_grid_template": {"$background_images": "","offset": "$pi_hotbar_offset"}}
         ]
     },
 
@@ -204,8 +204,8 @@
                                 [
                                     {"common_panel@$custom_panel": {"offset": [0,-4]}},
                                     {"inventory_panel_top_half@$top_half_variant": {}},
-                                    {"inventory_panel_bottom_half@common.inventory_panel_bottom_half": {"$background_images": "", "offset": "$crafting_inventory_offset"}},
-                                    {"hotbar_grid@common.hotbar_grid_template": {"$background_images": "", "offset": "$crafting_hotbar_offset"}}
+                                    {"inventory_panel_bottom_half@common.inventory_panel_bottom_half": {"$background_images": "","offset": "$crafting_inventory_offset"}},
+                                    {"hotbar_grid@common.hotbar_grid_template": {"$background_images": "","offset": "$crafting_hotbar_offset"}}
                                 ],
                                 "bindings":
                                 [

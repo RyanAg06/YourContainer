@@ -133,6 +133,6 @@
 			}
 		]
 	},
-	"enchanting_panel/root_panel/enchanting_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$enchant_inventory_offset"},
-	"enchanting_panel/root_panel/enchanting_screen_inventory/hotbar_grid": {"$background_images": "", "offset": "$enchant_hotbar_offset"}
+	"enchanting_panel/root_panel/enchanting_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$enchant_inventory_offset"},
+	"enchanting_panel/root_panel/enchanting_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$enchant_hotbar_offset"}
 }

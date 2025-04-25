@@ -22,13 +22,13 @@
 			{
 				"control_name": "common_panel",
 				"operation": "replace",
-				"where": [{"common_panel@common.common_panel": {}}],
-				"value": [{"common_panel@$custom_panel": {}}]
+				"where": [{"common_panel@common.common_panel": {} }],
+				"value": [{"common_panel@$custom_panel": {} }]
 			}
 		]
 	},
-	"small_chest_panel/root_panel/chest_panel/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$small_chest_inventory_offset"},
-	"small_chest_panel/root_panel/chest_panel/hotbar_grid": {"$background_images": "", "offset": "$small_chest_hotbar_offset"},
+	"small_chest_panel/root_panel/chest_panel/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$small_chest_inventory_offset"},
+	"small_chest_panel/root_panel/chest_panel/hotbar_grid": {"$background_images": "","offset": "$small_chest_hotbar_offset"},
 	
 	/* Large Chest */
 	"large_chest_panel/root_panel":
@@ -38,13 +38,13 @@
 			{
 				"control_name": "common_panel",
 				"operation": "replace",
-				"where": [{"common_panel@common.common_panel": {}}],
-				"value": [{"common_panel@common.large_chest_panel": {}}]
+				"where": [{"common_panel@common.common_panel": {} }],
+				"value": [{"common_panel@common.large_chest_panel": {} }]
 			}
 		]
 	},
-	"large_chest_panel/root_panel/chest_panel/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$large_chest_inventory_offset"},
-	"large_chest_panel/root_panel/chest_panel/hotbar_grid": {"$background_images": "", "offset": "$large_chest_hotbar_offset"},
+	"large_chest_panel/root_panel/chest_panel/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$large_chest_inventory_offset"},
+	"large_chest_panel/root_panel/chest_panel/hotbar_grid": {"$background_images": "","offset": "$large_chest_hotbar_offset"},
 	
 	/* Ender Chest */
 	"ender_chest_panel@chest.small_chest_panel": {"$custom_panel": "common.ender_chest_panel"},

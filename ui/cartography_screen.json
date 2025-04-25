@@ -99,6 +99,6 @@
 			}
 		]
 	},
-	"cartography_panel/root_panel/cartography_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$cartography_inventory_offset"},
-	"cartography_panel/root_panel/cartography_screen_inventory/hotbar_grid": {"$background_images": "", "offset": "$cartography_hotbar_offset"}
+	"cartography_panel/root_panel/cartography_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$cartography_inventory_offset"},
+	"cartography_panel/root_panel/cartography_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$cartography_hotbar_offset"}
 }

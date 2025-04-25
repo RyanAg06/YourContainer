@@ -152,7 +152,7 @@
 			}
 		]
 	},
-	"furnace_panel/root_panel/furnace_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "", "offset": "$furnace_inventory_offset"},
-	"furnace_panel/root_panel/furnace_screen_inventory/hotbar_grid": {"$background_images": "", "offset": "$furnace_hotbar_offset"}
+	"furnace_panel/root_panel/furnace_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$furnace_inventory_offset"},
+	"furnace_panel/root_panel/furnace_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$furnace_hotbar_offset"}
   }
   
