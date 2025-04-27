@@ -1,0 +1,78 @@
+{
+	/* Remove Close Button */
+	"screen_stack_panel":
+	{
+		"modifications": [
+			{
+				"control_name": "toolbar_anchor",
+				"operation": "remove"
+			}
+		]
+	},
+
+	/* Top Panel */
+	"top_half_panel":
+	{
+		"type": "panel",
+		"controls":
+		[
+			/* Input Slots */
+			{
+				"input_slots_stack_panel":
+				{
+					"type": "panel",
+					"offset": [-10,9],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"size": ["100%c","100%cm"],
+					"controls":
+					[
+						{"input_item_slot@loom.input_item_slot": {"offset": [0,0],"$background_images": ""}},
+						{"dye_item_slot@loom.dye_item_slot": {"offset": [20,0],"$background_images": ""}},
+						{"material_item_slot@loom.material_item_slot": {"offset": [10,19],"$background_images": ""}}
+					]
+				}
+			},
+
+			/* Preview Banner */
+			{
+				"result_banner_outline@loom.banner_outline":
+				{
+					"layer": 1,
+					"size": ["100%c + 2px","100%c + 2px"],
+					"offset": [11,-3],
+					"controls": [ {"result_banner_renderer@loom.result_banner_renderer": {"layer": 1}} ]
+				}
+			},
+
+			/* Result Banner */
+			{
+				"result_item_slot@loom.result_item_slot":
+				{
+					"size": [26,26],
+					"offset": [-5,15],
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"$background_images": ""
+				}
+			}
+		]
+	},
+
+	/* Loom */
+	"right_panel":
+	{
+		"modifications":
+		[
+			{
+				"control_name": "common_panel",
+				"operation": "replace",
+				"where": {"common_panel": {}},
+				"value": {"common_panel@common.loom_panel": {"offset": [0,-4]}}
+			}
+		]
+	},
+	"right_panel/loom_screen_inventory/loom_label": {"color": [1,1,1],"offset": [0,1]},
+	"right_panel/loom_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$loom_inventory_offset"},
+	"right_panel/loom_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$loom_hotbar_offset"}
+}

@@ -56,6 +56,10 @@
 	"$large_chest_inventory_offset": [0,3],
 	"$large_chest_hotbar_offset": [0,-3],
 
+	/* Loom */
+	"$loom_inventory_offset": [0,-1],
+	"$loom_hotbar_offset": [0,-7],
+
 	/* Player Inventory */
 	"$pi_inventory_offset": [0,0],
     "$pi_hotbar_offset": [0,-5],
@@ -69,6 +73,6 @@
 	"$smithing_hotbar_offset": [0,-3],
 
 	/* Stonecutter */
-	"$stonecutter_inventory_offset": [0,3],
-	"$stonecutter_hotbar_offset": [0,-3]
+	"$stonecutter_inventory_offset": [0,-1],
+	"$stonecutter_hotbar_offset": [0,-7]
 }
