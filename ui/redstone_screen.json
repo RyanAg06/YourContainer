@@ -1,0 +1,111 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	/* Container Item */
+	"redstone_input_grid": {"$background_images": ""},
+
+	/* Hopper */
+	"hopper_screen@common.inventory_screen_common":
+	{
+		"$close_on_player_hurt|default": true,
+		"$use_custom_pocket_toast|default": false,
+		"close_on_player_hurt": "$close_on_player_hurt",
+		"use_custom_pocket_toast": "$use_custom_pocket_toast",
+		"variables":
+		[
+			{
+				"requires": "$desktop_screen",
+				"$screen_label": "redstone.hopper_label",
+				"$screen_dimensions": [176,133],
+				"$grid_dimensions": [5,1],
+				"$grid_offset": [0,-2],
+				"$screen_content": "redstone.hopper_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$use_custom_pocket_toast": true,
+				"$screen_content": "pocket_containers.hopper_panel"
+			}
+		]
+	},
+	"hopper_panel@redstone.panel": {"$custom_panel": "common.hopper_panel","$redstone_inventory_offset": "$hopper_inventory_offset","$redstone_hotbar_offset": "$hopper_hotbar_offset","$redstone_title_offset": [7,8]},
+
+	/* Dispenser */
+	"dispenser_screen@common.inventory_screen_common":
+	{
+		"$close_on_player_hurt|default": true,
+		"$use_custom_pocket_toast|default": false,
+		"close_on_player_hurt": "$close_on_player_hurt",
+		"use_custom_pocket_toast": "$use_custom_pocket_toast",
+		"variables":
+		[
+			{
+				"requires": "$desktop_screen",
+				"$screen_label": "redstone.dispenser_label",
+				"$screen_dimensions": [176,166],
+				"$grid_dimensions": [3,3],
+				"$grid_offset": [0,5],
+				"$screen_content": "redstone.dispenser_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$use_custom_pocket_toast": true,
+				"$screen_content": "pocket_containers.dispenser_panel"
+			}
+		]
+	},
+	"dispenser_panel@redstone.panel": {"$custom_panel": "common.dispenser_panel","$redstone_inventory_offset": "$dispenser_inventory_offset","$redstone_hotbar_offset": "$dispenser_hotbar_offset","$redstone_title_offset": [0,9]},
+
+	/* Crafter */
+
+	/* Dropper */
+	"dropper_screen@common.inventory_screen_common":
+	{
+		"$close_on_player_hurt|default": true,
+		"$use_custom_pocket_toast|default": false,
+		"close_on_player_hurt": "$close_on_player_hurt",
+		"use_custom_pocket_toast": "$use_custom_pocket_toast",
+		"variables":
+		[
+			{
+				"requires": "$desktop_screen",
+				"$screen_label": "redstone.dropper_label",
+				"$screen_dimensions": [176,166],
+				"$grid_dimensions": [3,3],
+				"$grid_offset": [0,5],
+				"$screen_content": "redstone.dropper_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$use_custom_pocket_toast": true,
+				"$screen_content": "pocket_containers.dropper_panel"
+			}
+		]
+	},
+	"dropper_panel@redstone.panel": {"$custom_panel": "common.dropper_panel","$redstone_inventory_offset": "$dropper_inventory_offset","$redstone_hotbar_offset": "$dropper_hotbar_offset","$redstone_title_offset": [0,9]},
+
+	/* Panel */
+	"panel/root_panel":
+	{
+		"modifications":
+		[
+			{
+				"control_name": "common_panel",
+				"operation": "replace",
+				"where": {"common_panel": {}},
+				"value": {"common_panel@$custom_panel": {}}
+			}
+		]
+	},
+	"panel/root_panel/redstone_screen_inventory/red_bottom_half": {"$background_images": "","offset": "$redstone_inventory_offset"},
+	"panel/root_panel/redstone_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$redstone_hotbar_offset"},
+	"panel/root_panel/$screen_label": {"color": [1,1,1],"offset": "$redstone_title_offset"}
+}

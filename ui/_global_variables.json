@@ -3,7 +3,6 @@
 	/\  /\
 */
 {
-
 	/* Anvil */
 	"$anvil_inventory_slots_offset": [0,3],
 	"$anvil_hotbar_offset": [0,-3],
@@ -25,6 +24,14 @@
 	"$crafting_inventory_offset": [0,0],
 	"$crafting_hotbar_offset": [0,-5],
 
+	/* Dispenser */
+	"$dispenser_inventory_offset": [0,3],
+	"$dispenser_hotbar_offset": [0,-3],
+
+	/* Dropper */
+	"$dropper_inventory_offset": [0,3],
+	"$dropper_hotbar_offset": [0,-3],
+
 	/* Enchanting Table */
 	"$enchant_inventory_offset": [0,3],
 	"$enchant_hotbar_offset": [0,-3],
@@ -40,6 +47,10 @@
 	/* Grindstone */
 	"$grindstone_inventory_offset": [0,3],
 	"$grindstone_hotbar_offset": [0,-3],
+
+	/* Hopper */
+	"$hopper_inventory_offset": [0,1],
+	"$hopper_hotbar_offset": [0,-5],
 
 	/* Large Chest */
 	"$large_chest_inventory_offset": [0,3],

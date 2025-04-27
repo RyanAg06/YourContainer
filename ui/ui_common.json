@@ -94,5 +94,8 @@
 	"brewing_panel@custom_panel": {"$texture_bg": "textures/gui/container/brewing_stand"},
 	"grindstone_panel@custom_panel": {"$texture_bg": "textures/gui/container/grindstone"},
 	"smithing_panel@custom_panel": {"$texture_bg": "textures/gui/container/smithing"},
-	"beacon_panel@custom_panel": {"$texture_bg": "textures/gui/container/beacon","size": [214,221]}
+	"beacon_panel@custom_panel": {"$texture_bg": "textures/gui/container/beacon","size": [214,221]},
+	"hopper_panel@custom_panel": {"$texture_bg": "textures/gui/container/hopper","size": [176,133]},
+	"dispenser_panel@custom_panel": {"$texture_bg": "textures/gui/container/dispenser"},
+	"dropper_panel@custom_panel": {"$texture_bg": "textures/gui/container/dropper"}
 }
