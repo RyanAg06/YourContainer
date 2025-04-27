@@ -66,5 +66,9 @@
 
 	/* Smithing Table */
 	"$smithing_inventory_offset": [0,3],
-	"$smithing_hotbar_offset": [0,-3]
+	"$smithing_hotbar_offset": [0,-3],
+
+	/* Stonecutter */
+	"$stonecutter_inventory_offset": [0,3],
+	"$stonecutter_hotbar_offset": [0,-3]
 }

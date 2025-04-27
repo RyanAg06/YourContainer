@@ -1,0 +1,82 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+	/* Remove Close Button */
+	"screen_stack_panel":
+	{
+		"modifications":
+		[
+			{
+				"control_name": "toolbar_anchor",
+				"operation": "remove"
+			}
+		]
+	},
+
+	/* Top Panel */
+	"top_half_stack_panel":
+	{
+		"type": "panel",
+		"controls":
+		[
+			/* Input Item */
+			{
+				"input_item_slot@common.container_item":
+				{
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"offset": [-38,4],
+					"$background_images": "",
+					"$item_collection_name": "stonecutter_input_items"
+				}
+			},
+
+			/* Arrow */
+			{
+				"arrow_holder":
+				{
+					"type": "panel",
+					"anchor_from": "center",
+					"anchor_to": "center",
+					"size": [18,12],
+					"inherit_max_sibling_height": true,
+					"controls": [ {"arrow_icon@stonecutter.arrow_icon": {}} ]
+				}
+			},
+
+			/* Result Item */
+			{
+				"result_item_slot@common.container_item":
+				{
+					"size": [26,26],
+					"offset": [45,0],
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"$background_images": "",
+					"$item_collection_name": "stonecutter_result_items",
+					"$button_ref": "stonecutter.result_slot_button",
+					"$cell_image_size": [26,26]
+				}
+			}
+		]
+	},
+
+	/* Stonecutter */
+	"right_panel":
+	{
+		"modifications":
+		[
+			{
+				"control_name": "common_panel",
+				"operation": "replace",
+				"where": {"common_panel": {}},
+				"value": {"common_panel@common.stonecutter_panel": {}}
+			}
+		]
+	},
+	"right_panel/stonecutter_screen_inventory/stonecutter_label": {"color": [1,1,1],"offset": [0,-1]},
+	"right_panel/stonecutter_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$stonecutter_inventory_offset"},
+	"right_panel/stonecutter_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$stonecutter_hotbar_offset"}
+}
