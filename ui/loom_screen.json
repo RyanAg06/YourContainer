@@ -1,13 +1,49 @@
+/*
+	\____/\
+	/\  /\
+*/
 {
 	/* Remove Close Button */
 	"screen_stack_panel":
 	{
-		"modifications": [
+		"modifications":
+		[
 			{
 				"control_name": "toolbar_anchor",
 				"operation": "remove"
 			}
 		]
+	},
+
+	/* Left Panel */
+	"pattern_book_panel@common.root_panel":
+	{
+		"size": [146,166],
+		"controls":
+		[
+			{
+				"bg@common.common_panel":
+				{
+					"$show_close_button": false,
+					"$dialog_background": "loom.pattern_book_bg"
+				}
+			},
+			{
+				"scroll_panel@loom.scroll_panel":
+				{
+					"$scroll_background_image_control": "loom.scroll_panel_bg"
+				}
+			}
+		]
+  	},
+	
+	/* Left Panel Textures */
+	"pattern_book_bg@common.dialog_background_common": {"texture": "textures/gui/sprites/container/loom/pattern_book_bg"},
+	"scroll_panel_bg":
+	{
+		"layer": 2,
+		"type": "image",
+		"texture": "textures/gui/sprites/container/loom/scroll_panel_bg"
 	},
 
 	/* Top Panel */
@@ -72,7 +108,7 @@
 			}
 		]
 	},
-	"right_panel/loom_screen_inventory/loom_label": {"color": [1,1,1],"offset": [0,1]},
+	"right_panel/loom_screen_inventory/loom_label": {"color": [1,1,1],"offset": [1,3]},
 	"right_panel/loom_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$loom_inventory_offset"},
 	"right_panel/loom_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$loom_hotbar_offset"}
 }

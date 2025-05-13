@@ -15,7 +15,7 @@
 			{
 				"title_label@anvil.title_label":
 				{
-					"offset": [60,5],
+					"offset": [53,4],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
 					"color": [1,1,1]

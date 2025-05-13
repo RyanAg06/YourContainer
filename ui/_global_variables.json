@@ -24,6 +24,10 @@
 	"$crafting_inventory_offset": [0,0],
 	"$crafting_hotbar_offset": [0,-5],
 
+	/* Crafter */
+	"$crafter_inventory_offset": [0,3],
+	"$crafter_hotbar_offset": [0,-3],
+
 	/* Dispenser */
 	"$dispenser_inventory_offset": [0,3],
 	"$dispenser_hotbar_offset": [0,-3],

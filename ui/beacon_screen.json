@@ -3,6 +3,9 @@
 	/\  /\
 */
 {
+	/* Container Item */
+	"payment_panel/ingredient_item": {"$background_images": ""},
+
 	/* Panel */
 	"beacon_inner_panel":
 	{
@@ -19,7 +22,7 @@
 				"control_name": "common_panel",
 				"operation": "replace",
 				"where": [{"common_panel": {}}],
-				"value": [{"common_panel@common.beacon_panel": {}}]
+				"value": [{"common_panel@common.beacon_panel": {"offset": [0,0.5]}}]
 			}
 		]
 	},

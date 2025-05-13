@@ -60,9 +60,25 @@
 			}
 		]
 	},
-	"dispenser_panel@redstone.panel": {"$custom_panel": "common.dispenser_panel","$redstone_inventory_offset": "$dispenser_inventory_offset","$redstone_hotbar_offset": "$dispenser_hotbar_offset","$redstone_title_offset": [0,9]},
+	"dispenser_panel@redstone.panel": {"$custom_panel": "common.dispenser_panel","$redstone_inventory_offset": "$dispenser_inventory_offset","$redstone_hotbar_offset": "$dispenser_hotbar_offset","$redstone_title_offset": [2,9]},
 
 	/* Crafter */
+	"panel_crafter/root_panel":
+	{
+		"modifications":
+		[
+			{
+				"control_name": "common_panel",
+				"operation": "replace",
+				"where": [{"common_panel@common.common_panel": {} }],
+				"value": [{"common_panel@crafter_panel": {} }]
+			}
+		]
+	},
+	"panel_crafter/root_panel/$screen_label": {"color": [1,1,1]},
+	"panel_crafter/root_panel/redstone_screen_inventory/redstone_wire_line": {"size": [24,17],"offset": [99.5,38]},
+	"panel_crafter/root_panel/redstone_screen_inventory/red_bottom_half": {"$background_images": "","offset": "$crafter_inventory_offset"},
+	"panel_crafter/root_panel/redstone_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$crafter_hotbar_offset"},
 
 	/* Dropper */
 	"dropper_screen@common.inventory_screen_common":
@@ -90,7 +106,7 @@
 			}
 		]
 	},
-	"dropper_panel@redstone.panel": {"$custom_panel": "common.dropper_panel","$redstone_inventory_offset": "$dropper_inventory_offset","$redstone_hotbar_offset": "$dropper_hotbar_offset","$redstone_title_offset": [0,9]},
+	"dropper_panel@redstone.panel": {"$custom_panel": "common.dropper_panel","$redstone_inventory_offset": "$dropper_inventory_offset","$redstone_hotbar_offset": "$dropper_hotbar_offset","$redstone_title_offset": [2,9]},
 
 	/* Panel */
 	"panel/root_panel":

@@ -99,5 +99,6 @@
 	"dispenser_panel@custom_panel": {"$texture_bg": "textures/gui/container/dispenser"},
 	"dropper_panel@custom_panel": {"$texture_bg": "textures/gui/container/dropper"},
 	"stonecutter_panel@custom_panel": {"$texture_bg": "textures/gui/container/stonecutter"},
-	"loom_panel@custom_panel": {"$texture_bg": "textures/gui/container/loom"}
+	"loom_panel@custom_panel": {"$texture_bg": "textures/gui/container/loom"},
+	"crafter_panel@custom_panel": {"$texture_bg": "textures/gui/container/crafter"}
 }
