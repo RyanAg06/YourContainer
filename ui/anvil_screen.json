@@ -18,7 +18,7 @@
 					"offset": [53,4],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"color": [1,1,1]
+					"color": "$title_label_color"
 				}
 			},
 
@@ -59,25 +59,12 @@
 
 			/* Arrow */
 			{
-				"arrow_icon":
+				"arrow_icon@anvil.cross_out_icon":
 				{
-					"type": "panel",
-					"size": [28,21],
-					"offset": [92,42],
+					"size": [18,13],
+					"offset": [99,46],
 					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"controls":
-					[
-						{
-							"texture":
-							{
-								"type": "image",
-								"size": ["100%","100%"],
-								"texture": "textures/gui/sprites/container/anvil/error"
-							}
-						}
-					],
-					"bindings": [{"binding_name": "#cross_out_icon","binding_name_override": "#visible"}]
+					"anchor_to": "top_left"
 				}
 			},
 

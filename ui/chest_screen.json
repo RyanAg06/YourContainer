@@ -4,7 +4,7 @@
 */
 {
 	/* Title */
-	"chest_label": {"color": [1,1,1]},
+	"chest_label": {"color": "$title_label_color"},
 
 	/* Item Container */
 	"chest_grid_item@common.container_item":

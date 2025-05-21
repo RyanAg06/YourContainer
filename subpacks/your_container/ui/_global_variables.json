@@ -3,6 +3,9 @@
 	/\  /\
 */
 {
+	/* Title Label */
+	"$title_label_color": [1,1,1],
+
 	/* Anvil */
 	"$anvil_inventory_slots_offset": [0,3],
 	"$anvil_hotbar_offset": [0,-3],
@@ -19,6 +22,7 @@
 	"$cartography_inventory_offset": [0,-1],
 	"$cartography_hotbar_offset": [0,-7],
 	"$cartography_caompass_offset": [-7,10],
+	"$cartography_animation": "animations_ui.compass",
 
 	/* Crafting Table */
 	"$crafting_inventory_offset": [0,0],
@@ -40,9 +44,11 @@
 	"$enchant_inventory_offset": [0,3],
 	"$enchant_hotbar_offset": [0,-3],
 	"$enchant_input_item_loop_offset": [15,51],
+	"$enchant_animation": "animations_ui.enchant",
 
 	/* Ender Chest */
 	"$ender_eye_offset": [83,9],
+	"$ender_animation": "animations_ui.ender_eye",
 
 	/* Furnace */
 	"$furnace_inventory_offset": [0,3],

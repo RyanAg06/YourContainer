@@ -3,6 +3,9 @@
 	/\  /\
 */
 {
+	/* Title Label */
+	"$title_label_color": [0.3,0.3,0.3],
+
 	/* Anvil */
 	"$anvil_inventory_slots_offset": [0,3],
 	"$anvil_hotbar_offset": [0,-3],

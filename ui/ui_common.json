@@ -4,7 +4,7 @@
 */
 {
 	/* Inventory Label */
-	"inventory_panel_bottom_half_with_label/inventory_label": {"color": [1,1,1]},
+	"inventory_panel_bottom_half_with_label/inventory_label": {"color": "$title_label_color"},
 
 	/* Close Button */
 	"close_container_button":
@@ -80,14 +80,14 @@
 	},
 	"small_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/small_chest"},
 	"large_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/large_chest","size": [176,220]},
-	"ender_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/ender_chest","$custom_animation": "animations_ui.ender_eye"},
+	"ender_chest_panel@custom_panel": {"$texture_bg": "textures/gui/container/ender_chest","$custom_animation": "$ender_animation"},
 	"shulker_box_panel@custom_panel": {"$texture_bg": "textures/gui/container/shulker_box"},
 	"barrel_panel@custom_panel": {"$texture_bg": "textures/gui/container/barrel"},
 	"player_inventory_panel@custom_panel": {"$texture_bg": "textures/gui/container/inventory"},
 	"crafting_table_panel@custom_panel": {"$texture_bg": "textures/gui/container/crafting_table"},
 	"anvil_panel@custom_panel": {"$texture_bg": "textures/gui/container/anvil"},
-	"cartography_panel@custom_panel": {"$texture_bg": "textures/gui/container/cartography","$custom_animation": "animations_ui.compass"},
-	"enchanting_panel@custom_panel": {"$texture_bg": "textures/gui/container/enchanting_table","$custom_animation": "animations_ui.enchant"},
+	"cartography_panel@custom_panel": {"$texture_bg": "textures/gui/container/cartography","$custom_animation": "$cartography_animation"},
+	"enchanting_panel@custom_panel": {"$texture_bg": "textures/gui/container/enchanting_table","$custom_animation": "$enchant_animation"},
 	"furnace_panel@custom_panel": {"$texture_bg": "textures/gui/container/furnace"},
 	"blast_furnace_panel@custom_panel": {"$texture_bg": "textures/gui/container/blast_furnace"},
 	"smoker_panel@custom_panel": {"$texture_bg": "textures/gui/container/smoker"},

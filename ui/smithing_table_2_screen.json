@@ -16,7 +16,7 @@
 					"offset": [45,2],
 					"anchor_from": "top_left",
 					"anchor_to": "top_left",
-					"color": [1,1,1]
+					"color": "$title_label_color"
 				}
 			},
 
@@ -84,35 +84,11 @@
 				}
 			},
 
-			/* Arrow */
-			{
-				"arrow_icon":
-				{
-					"type": "panel",
-					"size": [28,21],
-					"offset": [58,43],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"controls":
-					[
-						{
-							"texture":
-							{
-								"type": "image",
-								"size": ["100%","100%"],
-								"texture": "textures/gui/sprites/container/smithing/error"
-							}
-						}
-					],
-					"bindings": [{"binding_name": "#cross_out_icon","binding_name_override": "#visible"}]
-				}
-			},
-
 			/* Result Item */
 			{
 				"result_item_slot@smithing_table_2.smithing_table_item_slot":
 				{
-					"offset": [18,18],
+					"offset": [18,18.5],
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
 					"$background_images": "",

@@ -13,8 +13,8 @@
 			{
 				"title_label@grindstone.title_label":
 				{
-					"offset": [4,-1],
-					"color": [1,1,1]
+					"offset": [4,1],
+					"color": "$title_label_color"
 				}
 			},
 
@@ -49,35 +49,6 @@
 					"$focus_override_up": "grindstone_input",
 					"$focus_override_right_binding_type": "none",
 					"$focus_override_right": "grindstone_result"
-				}
-			},
-
-			/* Error */
-			{
-				"error":
-				{
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"offset": [92,31],
-					"controls":
-					[
-						{
-							"type": "panel",
-							"size": [28,21],
-							"controls":
-							[
-								{
-									"texture":
-									{
-										"type": "image",
-										"size": ["100%","100%"],
-										"texture": "textures/gui/sprites/container/grindstone/error"
-									}
-								}
-							]
-						}
-					],
-					"bindings": [{"binding_name": "#cross_out_icon","binding_name_override": "#visible"}]
 				}
 			},
 

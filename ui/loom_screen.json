@@ -108,7 +108,7 @@
 			}
 		]
 	},
-	"right_panel/loom_screen_inventory/loom_label": {"color": [1,1,1],"offset": [1,3]},
+	"right_panel/loom_screen_inventory/loom_label": {"color": "$title_label_color","offset": [1,3]},
 	"right_panel/loom_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$loom_inventory_offset"},
 	"right_panel/loom_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$loom_hotbar_offset"}
 }

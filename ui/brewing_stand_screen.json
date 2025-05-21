@@ -16,7 +16,7 @@
 					"offset": [5,1],
 					"anchor_from": "top_middle",
 					"anchor_to": "top_middle",
-					"color": [1,1,1]
+					"color": "$title_label_color"
 				}
 			},
 

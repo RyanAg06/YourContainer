@@ -21,8 +21,8 @@
 			{
 				"enchanting_label@enchanting.enchanting_label":
 				{
-					"offset": [30,-1],
-					"color": [1,1,1]
+					"offset": [30,0],
+					"color": "$title_label_color"
 				}
 			},
 
