@@ -15,6 +15,28 @@
         "duration": 0.1
     },
 
+    /* Anvil Hammer */
+    "anvil_hammer":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [38,38],
+        "offset": "$anvil_hammer_offset",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 35,
+            "frame_step": 0,
+            "fps": 14,
+            "easing": "linear"
+        },
+        "uv_size": [38,38],
+        "texture": "textures/gui/sprites/container/gif/anvil_hammer"
+    },
+
     /* Enchant */
     "enchant":
     {
@@ -63,6 +85,50 @@
     "ender_eye_09@animations_ui.anim_uv_base": {"$uv_frame": [0,10],"$next_frame":"@animations_ui.ender_eye_10","duration": 0.2},
     "ender_eye_10@animations_ui.anim_uv_base": {"$uv_frame": [0, 0],"$next_frame":"@animations_ui.ender_eye_11","duration": 3},
     "ender_eye_11@animations_ui.anim_uv_base": {"$uv_frame": [0,80],"$next_frame":"@animations_ui.ender_eye_00","duration": 2},
+
+    /* Smithing Hammer */
+    "smithing_hammer":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [38,38],
+        "offset": "$smithing_hammer_offset",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 35,
+            "frame_step": 0,
+            "fps": 14,
+            "easing": "linear"
+        },
+        "uv_size": [38,38],
+        "texture": "textures/gui/sprites/container/gif/smithing_hammer"
+    },
+
+    /* Magma Cube */
+    "magma_cube":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [9,16],
+        "offset": "$furnace_magma_offset",
+        "anchor_from": "right_middle",
+        "anchor_to": "right_middle",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 9,
+            "frame_step": 0,
+            "fps": 4,
+            "easing": "linear"
+        },
+        "uv_size": [9,16],
+        "texture": "textures/gui/sprites/container/gif/magma"
+    },
 
     /* Compass */
     "compass":

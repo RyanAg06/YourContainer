@@ -9,6 +9,8 @@
 	/* Anvil */
 	"$anvil_inventory_slots_offset": [0,3],
 	"$anvil_hotbar_offset": [0,-3],
+	"$anvil_hammer_offset": [12,8],
+	"$anvil_animation": "animations_ui.anvil_hammer",
 
 	/* Beacon */
 	"$beacon_inventory_slots_offset": [0,3.6],
@@ -22,7 +24,7 @@
 	"$cartography_inventory_offset": [0,-1],
 	"$cartography_hotbar_offset": [0,-7],
 	"$cartography_caompass_offset": [-7,10],
-	"$cartography_animation": "animations_ui.compass",
+	"$cartography_animation": [{"animations_ui.compass":{}},{"animations_ui.enchant":{}}],
 
 	/* Crafting Table */
 	"$crafting_inventory_offset": [0,0],
@@ -53,6 +55,8 @@
 	/* Furnace */
 	"$furnace_inventory_offset": [0,3],
 	"$furnace_hotbar_offset": [0,-3],
+	"$furnace_magma_offset": [-6,-12],
+	"$furnace_animation": "animations_ui.magma_cube",
 
 	/* Grindstone */
 	"$grindstone_inventory_offset": [0,3],
@@ -81,6 +85,8 @@
 	/* Smithing Table */
 	"$smithing_inventory_offset": [0,3],
 	"$smithing_hotbar_offset": [0,-3],
+	"$smithing_hammer_offset": [3,7],
+	"$smithing_animation": "animations_ui.smithing_hammer",
 
 	/* Stonecutter */
 	"$stonecutter_inventory_offset": [0,-1],
