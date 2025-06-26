@@ -24,7 +24,7 @@
 	"$cartography_inventory_offset": [0,-1],
 	"$cartography_hotbar_offset": [0,-7],
 	"$cartography_caompass_offset": [-7,10],
-	"$cartography_animation": [{"animations_ui.compass":{}},{"animations_ui.enchant":{}}],
+	"$cartography_animation": "animations_ui.compass",
 
 	/* Crafting Table */
 	"$crafting_inventory_offset": [0,0],

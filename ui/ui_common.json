@@ -89,7 +89,7 @@
 	"cartography_panel@custom_panel": {"$texture_bg": "textures/gui/container/cartography","$custom_animation": "$cartography_animation"},
 	"enchanting_panel@custom_panel": {"$texture_bg": "textures/gui/container/enchanting_table","$custom_animation": "$enchant_animation"},
 	"furnace_panel@custom_panel": {"$texture_bg": "textures/gui/container/furnace","$custom_animation": "$furnace_animation"},
-	"blast_furnace_panel@custom_panel": {"$texture_bg": "textures/gui/container/blast_furnace"},
+	"blast_furnace_panel@custom_panel": {"$texture_bg": "textures/gui/container/blast_furnace","$custom_animation": "$furnace_animation"},
 	"smoker_panel@custom_panel": {"$texture_bg": "textures/gui/container/smoker"},
 	"brewing_panel@custom_panel": {"$texture_bg": "textures/gui/container/brewing_stand"},
 	"grindstone_panel@custom_panel": {"$texture_bg": "textures/gui/container/grindstone"},
