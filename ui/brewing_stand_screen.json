@@ -3,117 +3,25 @@
 	/\  /\
 */
 {
-  	/* Top Panel */
-	"brewing_panel_top_half":
-	{
-		"type": "panel",
-		"controls":
-		[
-			/* Title */
-			{
-				"title@brewing_stand.brewing_label":
-				{
-					"offset": [5,1],
-					"anchor_from": "top_middle",
-					"anchor_to": "top_middle",
-					"color": "$title_label_color"
-				}
-			},
-
-			/* Input Material */
-			{
-				"brewing_input_slot@brewing_stand.brewing_input_slot":
-				{
-					"offset": [-1,13],
-					"anchor_from": "top_middle",
-					"anchor_to": "top_middle",
-					"$background_images": ""
-				}
-			},
-
-			/* Blaze Fuel */
-			{
-				"brewing_fuel_slot@brewing_stand.brewing_fuel_slot":
-				{
-					"offset": [16,13],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"$background_images": ""
-				}
-			},
-			{
-				"brewing_fuel_bar_empty_image@brewing_stand.brewing_fuel_bar_empty_image":
-				{
-					"offset": [54,39],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left"
-				}
-			},
-			{
-				"brewing_fuel_bar_full_image@brewing_stand.brewing_fuel_bar_full_image":
-				{
-					"offset": [55,40],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left"
-				}
-			},
-
-			/* Bubbles */
-			{
-				"bubbles_full_image@brewing_stand.bubbles_full_image":
-				{
-					"offset": [60,10],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left"
-				}
-			},
-			
-			/* Output Slots */
-			{
-				"brewing_output_slots@brewing_stand.brewing_output_slots":
-				{
-					"offset": [60,54],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"$background_images": ""
-				}
-			},
-
-			/* Arrow Progress */
-			{
-				"brewing_arrow_empty_image@brewing_stand.brewing_arrow_empty_image":
-				{
-					"offset": [14,13],
-					"anchor_from": "top_middle",
-					"anchor_to": "top_middle",
-					"$background_images": ""
-				}
-			},
-			{
-				"brewing_arrow_full_image@brewing_stand.brewing_arrow_full_image":
-				{
-					"offset": [14,13],
-					"anchor_from": "top_middle",
-					"anchor_to": "top_middle",
-					"$background_images": ""
-				}
-			}
-		]
-	},
-
 	/* Brewing Stand */
-	"brewing_stand_panel/root_panel":
+  	"brewing_stand_screen@common.inventory_screen_common":
 	{
-		"modifications":
+		"$close_on_player_hurt|default": true,
+		"close_on_player_hurt": "$close_on_player_hurt",
+		"variables":
 		[
 			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": {"common_panel": {}},
-				"value": {"common_panel@common.brewing_panel": {}}
+				"requires": "$desktop_screen",
+				"$screen_content": "brewing_stand_uwu.brewing_stand_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$screen_content": "brewing_stand_pocket.brewing_stand_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
 			}
 		]
-	},
-	"brewing_stand_panel/root_panel/furnace_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$brewing_inventory_offset"},
-	"brewing_stand_panel/root_panel/furnace_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$brewing_hotbar_offset"}
+	}
 }

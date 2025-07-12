@@ -3,81 +3,121 @@
 	/\  /\
 */
 {
-	/* Remove Close Button */
-	"screen_stack_panel":
-	{
-		"modifications":
-		[
-			{
-				"control_name": "toolbar_anchor",
-				"operation": "remove"
-			}
-		]
-	},
-
-	/* Top Panel */
-	"top_half_stack_panel":
-	{
-		"type": "panel",
-		"controls":
-		[
-			/* Input Item */
-			{
-				"input_item_slot@common.container_item":
-				{
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"offset": [-38,-0.5],
-					"$background_images": "",
-					"$item_collection_name": "stonecutter_input_items"
-				}
-			},
-
-			/* Arrow */
-			{
-				"arrow_holder":
-				{
-					"type": "panel",
-					"anchor_from": "center",
-					"anchor_to": "center",
-					"size": [18,12],
-					"offset": [0,-4],
-					"inherit_max_sibling_height": true,
-					"controls": [ {"arrow_icon@stonecutter.arrow_icon": {}} ]
-				}
-			},
-
-			/* Result Item */
-			{
-				"result_item_slot@common.container_item":
-				{
-					"size": [26,26],
-					"offset": [45,-4.5],
-					"anchor_from": "top_right",
-					"anchor_to": "top_right",
-					"$background_images": "",
-					"$item_collection_name": "stonecutter_result_items",
-					"$button_ref": "stonecutter.result_slot_button",
-					"$cell_image_size": [26,26]
-				}
-			}
-		]
-	},
-
 	/* Stonecutter */
-	"right_panel":
+	"stonecutter_screen@common.inventory_screen_common":
 	{
-		"modifications":
+		"close_on_player_hurt": true,
+		"$screen_bg_content": "common.screen_background",
+		"$screen_background_alpha": 0.4,
+		"button_mappings": "$button_mappings",
+		"variables":
 		[
 			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": {"common_panel": {}},
-				"value": {"common_panel@common.stonecutter_panel": {"offset": [0,-4]}}
+				"requires": "$desktop_screen",
+				"$screen_content": "stonecutter_uwu.stonecutter_panel"
+			},
+			{
+				"requires": "$pocket_screen",
+				"$screen_content": "stonecutter_pocket.stonecutter_panel",
+				"$button_mappings":
+				[
+					{
+						"from_button_id": "button.menu_cancel",
+						"to_button_id": "button.menu_exit",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_inventory_cancel",
+						"to_button_id": "button.menu_exit",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_up",
+						"to_button_id": "button.menu_up",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_down",
+						"to_button_id": "button.menu_down",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_left",
+						"to_button_id": "button.menu_left",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_right",
+						"to_button_id": "button.menu_right",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_select",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.menu_secondary_select",
+						"to_button_id": "button.cursor_drop_one",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.menu_ok",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.controller_back",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed",
+						"ignored": "(not $is_ps4)"
+					},
+					{
+						"from_button_id": "button.controller_select",
+						"to_button_id": "button.cursor_drop_one",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.controller_secondary_select",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.menu_tab_left",
+						"to_button_id": "button.left_panel_tab_decrement",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_tab_right",
+						"to_button_id": "button.menu_tab_right",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_alternate_tab_left",
+						"to_button_id": "button.left_panel_tab_increment",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_alternate_tab_right",
+						"to_button_id": "button.menu_alternate_tab_right",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.controller_secondary_select_left",
+						"to_button_id": "button.controller_secondary_select_left",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_clear",
+						"to_button_id": "button.menu_clear",
+						"mapping_type": "focused"
+					}
+				]
 			}
 		]
-	},
-	"right_panel/stonecutter_screen_inventory/stonecutter_label": {"color": "$title_label_color","offset": [0,5]},
-	"right_panel/stonecutter_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$stonecutter_inventory_offset"},
-	"right_panel/stonecutter_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$stonecutter_hotbar_offset"}
+	}
 }

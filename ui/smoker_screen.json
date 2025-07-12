@@ -3,5 +3,6 @@
 	/\  /\
 */
 {
-	"smoker_screen@furnace.furnace_screen": {"$custom_panel": "common.smoker_panel"}
+	/* Smoker */
+	"smoker_screen@furnace.furnace_screen": {"$custom_panel": "smoker_uwu.smoker_panel"}
 }

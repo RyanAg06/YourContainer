@@ -1,0 +1,226 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+    "namespace": "enchanting_uwu",
+
+    /* Enchant Panel */
+    "enchanting_panel":
+    {
+        "type": "panel",
+        "$use_compact_close_button": true,
+        "controls":
+        [
+            { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+            { "selected_item_details_factory@common.selected_item_details_factory": {} },
+            { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+            {
+                "root_panel@common.root_panel":
+                {
+                    "layer": 1,
+                    "controls":
+                    [
+                        { "common_panel@common.enchanting_panel": {} },
+                        {
+                            "enchanting_screen_inventory":
+                            {
+                                "type": "panel",
+                                "layer": 5,
+                                "controls":
+                                [
+                                    { "enchanting_panel_top_half@enchanting_uwu.enchanting_panel_top_half": {} },
+                                    { "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {"$background_images": "","offset": [0,3]} },
+                                    { "hotbar_grid@common.hotbar_grid_template": {"$background_images": "","offset": [0,-3]} },
+                                    { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} }
+                                ]
+                            }
+                        },
+                        { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+                        { "gamepad_cursor@common.gamepad_cursor_button": {} }
+                    ]
+                }
+            },
+            { "flying_item_renderer@common.flying_item_renderer": { "layer": 15 } }
+        ]
+    },
+
+    /* Top Panel */
+	"enchanting_panel_top_half":
+	{
+		"type": "panel",
+		"anchor_to": "top_left",
+		"anchor_from": "top_left",
+		"controls":
+		[
+            { "enchant@animations_uwu.enchant": {} },
+
+			/* Title */
+			{
+				"enchanting_label@enchanting.enchanting_label":
+				{
+					"offset": [30,5],
+					"color": "$title_label_color"
+				}
+			},
+
+			/* Book */
+			{
+				"enchanting_book_panel":
+				{
+					"type": "panel",
+					"size": [40,40],
+					"offset": [13,11],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"controls":
+					[
+						{
+							"enchanting_book":
+							{
+								"layer": 13,
+								"type": "custom",
+								"renderer": "enchanting_book_renderer",
+								"animation_reset_name": "screen_animation_reset",
+								"anims":
+								[
+									"@common.screen_exit_size_animation_push",
+									"@common.screen_exit_size_animation_pop",
+									"@common.screen_entrance_size_animation_push",
+									"@common.screen_entrance_size_animation_pop"
+								],
+								"bindings": [{"binding_name": "#open","binding_type": "global"}]
+							}
+						}
+					]
+				}
+			},
+
+			/* Input Item */
+			{
+				"item_grid@common.container_item":
+				{
+					"offset": [14,50],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"$background_images": "",
+					"$item_collection_name": "enchanting_input_items"
+				}
+			},
+
+			/* Lapis Slot */
+			{
+				"lapis_grid@common.container_item":
+				{
+					"offset": [34,50],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"$background_images": "",
+					"$item_collection_name": "enchanting_lapis_items"
+				}
+			},
+
+			/* Enchant Panel */
+			{
+				"grid_panel":
+				{
+					"type": "panel",
+					"size": [108,59],
+					"offset": [-8,17],
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"controls":
+					[
+						{
+							"dust_panel@enchanting.dust_panel":
+							{
+								"layer": 10,
+								"anchor_from": "top_left",
+								"anchor_to": "top_left"
+							}
+						},
+						{
+							"enchantments_grid":
+							{
+								"layer": 2,
+								"type": "grid",
+								"size": ["100%","100%"],
+								"anchor_from": "center",
+								"anchor_to": "center",
+								"grid_dimensions": [1,3],
+								"collection_name": "#enchant_buttons",
+								"grid_item_template": "enchanting_uwu.enchant_button_panel"
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+
+	/* Buttons Enchant Panel */
+	"enchant_button_panel":
+	{
+		"type": "panel",
+		"size": ["100%","33.333333%"],
+		"layer": 7,
+		"controls":
+		[
+			{ "dark_background@enchanting.dark_background": {"texture": ""} },
+			{
+				"unselectable_button@enchanting.base_button":
+				{
+					"$visibility_binding_name": "#unselectable_button_visibility",
+					"sound_volume": 0.0,
+					"layer": 22,
+					"button_mappings": [],
+					"controls":
+					[
+						{ "default@enchanting.dark_background": {"texture": ""} },
+						{ "hover@enchanting.dark_background_with_hover_text": {"texture": ""} },
+						{ "pressed@enchanting.dark_background": {} },
+						{ "rune_text@enchanting.fail_runes": {} },
+						{ "enchant_cost@enchanting.fail_cost": {} }
+					]
+				}
+			},
+			{
+				"selectable_button@enchanting.base_button":
+				{
+					"$visibility_binding_name": "#selectable_button_visibility",
+					"$focus_override_left": "enchanting_lapis",
+					"$focus_override_right": "FOCUS_OVERRIDE_STOP",
+					"sound_volume": 0.0,
+					"layer": 22,
+					"button_mappings":
+					[
+						{
+							"from_button_id": "button.menu_select",
+							"to_button_id": "button.menu_ok",
+							"mapping_type": "pressed"
+						},
+						{
+							"from_button_id": "button.menu_ok",
+							"to_button_id": "button.menu_ok",
+							"mapping_type": "focused"
+						},
+						{
+							"from_button_id": "button.controller_back",
+							"to_button_id": "button.menu_ok",
+							"mapping_type": "focused",
+							"ignored": "(not $is_ps4)"
+						}
+					],
+					"controls":
+					[
+						{ "default@enchanting.active_background": {"texture": ""} },
+						{ "hover@enchanting.active_background_with_hover_text": {} },
+						{ "pressed@enchanting.dark_background": {} },
+						{ "rune_text@enchanting.fail_runes": {} },
+						{ "enchant_cost@enchanting.success_cost": {} }
+					]
+				}
+			}
+		]
+	}
+}

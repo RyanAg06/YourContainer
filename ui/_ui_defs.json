@@ -5,6 +5,27 @@
 {
     "ui_defs":
  	[
- 		"ui/animations_ui.json"
+ 		"ui/resources/containers/animations.json",
+		"ui/resources/containers/chest_screen.json",
+		"ui/resources/containers/large_chest_screen.json",
+		"ui/resources/containers/ender_chest_screen.json",
+		"ui/resources/containers/shulker_screen.json",
+		"ui/resources/containers/barrel_screen.json",
+		"ui/resources/containers/player_inventory_screen.json",
+		"ui/resources/containers/crafting_table_screen.json",
+		"ui/resources/containers/anvil_screen.json",
+		"ui/resources/containers/cartography_screen.json",
+		"ui/resources/containers/enchanting_screen.json",
+		"ui/resources/containers/furnace_screen.json",
+		"ui/resources/containers/blast_furnace_screen.json",
+		"ui/resources/containers/smoker_screen.json",
+		"ui/resources/containers/brewing_stand_screen.json",
+		"ui/resources/containers/grindstone_screen.json",
+		"ui/resources/containers/smithing_screen.json",
+		"ui/resources/containers/beacon_screen.json",
+		"ui/resources/containers/redstone_screen.json",
+		"ui/resources/containers/stonecutter_screen.json",
+		"ui/resources/containers/loom_screen.json",
+		"ui/resources/containers/crafter_screen.json"
     ]
 }

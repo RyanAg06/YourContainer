@@ -1,0 +1,122 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+    "namespace": "stonecutter_uwu",
+
+    /* Stonecutter Panel */
+    "stonecutter_panel":
+    {
+        "type": "panel",
+        "controls":
+        [
+            { "screen_stack_panel@stonecutter_uwu.screen_stack_panel": {} },
+            { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+            { "selected_item_details_factory@common.selected_item_details_factory": {} },
+            { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+            { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+            { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} },
+            { "flying_item_renderer@common.flying_item_renderer": {"layer": 15} }
+        ]
+    },
+
+    /* Stask Panel */
+    "screen_stack_panel": 
+    {
+        "type": "stack_panel",
+        "orientation": "horizontal",
+        "size": ["100%c","100%cm"],
+        "controls":
+        [
+            { "stone_book_panel@stonecutter.stone_book_panel": {} },
+            { "center_fold@stonecutter.center_fold": {} },
+            { "right_panel@stonecutter_uwu.right_panel": {} }
+        ]
+    },
+
+    /* Right Panel */
+    "right_panel@common.root_panel":
+    {
+        "layer": 1,
+        "controls":
+        [
+            { "common_panel@common.stonecutter_panel": {"$show_close_button": false,"offset": [0,-4]} },
+            {
+                "stonecutter_screen_inventory":
+                {
+                    "type": "panel",
+                    "layer": 2,
+                    "controls":
+                    [
+                        { "stonecutter_label@stonecutter.stonecutter_label": {"offset": [0,8]} },
+                        { "top_half_panel@stonecutter_uwu.top_half_panel": {} },
+                        { "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {"$background_images": "","offset": [0,-1]} },
+                        { "hotbar_grid@common.hotbar_grid_template": {"$background_images": "","offset": [0,-7]} }
+                    ]
+                }
+            }
+        ]
+    },
+
+    /* Top Panel */
+    "top_half_panel": 
+    {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "size": ["100%-14px","50%-22px"],
+        "offset": [0,15],
+        "controls": [ { "top_half_stack_panel@stonecutter_uwu.top_half_stack_panel": {}} ]
+    },
+
+    /* Top Stack Panel */
+	"top_half_stack_panel":
+	{
+		"type": "panel",
+        "size": [ "100%c", "100%cm" ],
+		"controls":
+		[
+			/* Input Item */
+			{
+				"input_item_slot@common.container_item":
+				{
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"offset": [-38,-0.5],
+					"$background_images": "",
+					"$item_collection_name": "stonecutter_input_items"
+				}
+			},
+
+			/* Arrow */
+			{
+				"arrow_holder":
+				{
+					"type": "panel",
+					"anchor_from": "center",
+					"anchor_to": "center",
+					"size": [18,12],
+					"offset": [0,-4],
+					"inherit_max_sibling_height": true,
+					"controls": [ {"arrow_icon@stonecutter.arrow_icon": {}} ]
+				}
+			},
+
+			/* Result Item */
+			{
+				"result_item_slot@common.container_item":
+				{
+					"size": [26,26],
+					"offset": [45,-4.5],
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"$background_images": "",
+					"$item_collection_name": "stonecutter_result_items",
+					"$button_ref": "stonecutter.result_slot_button",
+					"$cell_image_size": [26,26]
+				}
+			}
+		]
+	}
+}

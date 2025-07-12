@@ -1,0 +1,151 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+    "namespace": "smoker_uwu",
+
+    /* Smoker Panel */
+    "smoker_panel":
+    {
+        "type": "panel",
+        "controls":
+        [
+            { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+            { "selected_item_details_factory@common.selected_item_details_factory": {} },
+            { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+            {
+                "root_panel@common.root_panel":
+                {
+                    "layer": 1,
+                    "controls":
+                    [
+                        { "common_panel@common.smoker_panel": {} },
+                        {
+                            "furnace_screen_inventory":
+                            {
+                                "type": "panel",
+                                "layer": 5,
+                                "controls":
+                                [
+                                    { "furnace_panel_top_half@smoker_uwu.furnace_panel_top_half": {} },
+                                    { "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {"$background_images": "","offset": [0,3]} },
+                                    { "hotbar_grid@common.hotbar_grid_template": {"$background_images": "","offset": [0,-3]} },
+                                    { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} }
+                                ]
+                            }
+                        },
+                        { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+                        { "gamepad_cursor@common.gamepad_cursor_button": {} }
+                    ]
+                }
+            },
+            { "flying_item_renderer@common.flying_item_renderer": {"layer": 15} }
+        ]
+    },
+
+    /* Top Panel */
+    "furnace_panel_top_half":
+    {
+        "type": "panel",
+		"controls":
+		[
+			/* Title */
+			{
+				"title_label@furnace.furnace_label":
+				{
+					"offset": [0,8],
+					"color": "$title_label_color"
+				}
+			},
+
+			/* Ingredient */
+			{
+				"furnace_ingredient_item@common.container_item":
+				{
+					"size": [18,18],
+					"offset": [55,20],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"$background_images": "",
+					"$item_collection_name": "furnace_ingredient_items",
+					"$focus_id": "furnace_ingredient_item",
+					"$focus_override_left": "FOCUS_OVERRIDE_STOP",
+					"$focus_override_left_binding_type": "none",
+					"$focus_override_up": "FOCUS_OVERRIDE_STOP",
+					"$focus_override_up_binding_type": "none"
+				}
+			},
+
+			/* Lit Progress */
+			{
+				"lit_progress":
+				{
+					"type": "panel",
+					"size": [13,13],
+					"offset": [57,41],
+					"anchor_to": "top_left",
+					"anchor_from": "top_left",
+					"controls":
+					[
+						{ "flame_empty_image@furnace.flame_empty_image": {} },
+						{ "flame_full_image@furnace.flame_full_image": {} }
+					]
+				}
+			},
+
+			/* Fuel */
+			{
+				"furnace_fuel_item@common.container_item":
+				{
+					"size": [18,18],
+					"offset": [55,56],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"$background_images": "",
+					"$item_collection_name": "furnace_fuel_items",
+					"$focus_id": "furnace_fuel_item",
+					"$focus_override_right": "furnace_output_item",
+					"$focus_override_right_binding_type": "none",
+					"$focus_override_left": "FOCUS_OVERRIDE_STOP",
+					"$focus_override_left_binding_type": "none"
+				}
+			},
+
+			/* Arrow Progress */
+			{
+				"burn_progress":
+				{
+					"type": "panel",
+					"size":[22,15],
+					"offset": [80,39],
+					"anchor_to": "top_left",
+					"anchor_from": "top_left",
+					"controls":
+					[
+						{ "furnace_arrow_empty_image@furnace.furnace_arrow_empty_image": {"anchor_to": "center","anchor_from": "center"} },
+						{ "furnace_arrow_full_image@furnace.furnace_arrow_full_image":{"anchor_to": "center","anchor_from": "center"} }
+					]
+				}
+			},
+
+			/* Output */
+			{
+				"furnace_output_item@common.container_item":
+				{
+					"size": [26,26],
+					"offset": [-39,34],
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"$background_images": "",
+					"$item_collection_name": "furnace_output_items",
+					"$focus_id": "furnace_output_item",
+					"$focus_override_right_binding_type": "none",
+					"$focus_override_right": "FOCUS_OVERRIDE_STOP",
+					"$focus_override_left_binding_type": "none",
+					"$focus_override_left": "furnace_fuel_item"
+				}
+			}
+		]
+    }
+}

@@ -1,0 +1,137 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+    "namespace": "beacon_uwu",
+
+    /* Beacon Panel */
+    "beacon_panel":
+    {
+        "type": "panel",
+        "controls":
+        [
+            { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+            { "selected_item_details_factory@common.selected_item_details_factory": {"control_name": "@beacon.selected_item_details"} },
+            { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+            {
+                "root_panel@common.root_panel":
+                {
+                    "layer": 1,
+                    "size": [256,219],
+                    "controls":
+                    [
+                        { "common_panel@common.beacon_panel": {"offset": [0,0.5]} },
+                        {
+                            "beacon_inventory":
+                            {
+                                "type": "panel",
+                                "controls":
+                                [
+                                    {
+                                        "beacon_inner_panel@beacon_uwu.beacon_inner_panel":
+                                        {
+                                            "offset": [0,4],
+                                            "texture": "",
+                                            "layer": 2
+                                        }
+                                    },
+                                    {
+                                        "payment_panel@beacon_uwu.payment_panel":
+                                        {
+                                            "offset": [0,8],
+                                            "layer": 2
+                                        }
+                                    },
+                                    {
+                                        "inventory_panel_bottom_half@common.inventory_panel_bottom_half":
+                                        {
+                                            "layer": 2,
+                                            "$button_ref": "beacon.inventory_slot_button",
+                                            "$background_images": "",
+                                            "offset": [0,3.6]
+                                        }
+                                    },
+                                    {
+                                        "hotbar_grid_template@common.hotbar_grid_template":
+                                        {
+                                            "$button_ref": "beacon.hotbar_slot_button",
+                                            "$background_images": "",
+                                            "offset": [0,-2.5]
+                                        }
+                                    },
+                                    { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+                                    { "gamepad_cursor@common.gamepad_cursor_button": {} }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            { "flying_item_renderer@common.flying_item_renderer": {"layer": 12} }
+        ]
+    },
+
+    /* Effect Panel */
+    "beacon_inner_panel":
+    {
+        "type": "image",
+        "texture": "",
+        "size": [212,97],
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "controls": [ {"button_panel@beacon.button_panel": {}} ]
+    },
+
+    /* Payment Panel */
+    "payment_panel":
+    {
+        "type": "panel",
+        "size": ["100%",22],
+        "controls":
+        [
+            {
+                "confirm_panel@beacon.panel_template":
+                {
+                    "offset": [48,0],
+                    "$button_name": "confirm",
+                    "$image_texture": "textures/ui/confirm",
+                    "$image_size": [14,12],
+                    "$button_control": "beacon.button_template",
+                    "anchor_from": "center",
+                    "anchor_to": "left_middle"
+                }
+            },
+            {
+                "cancel_panel@beacon.panel_template": 
+                {
+                    "offset": [74,0],
+                    "$button_name": "cancel",
+                    "$image_texture": "textures/ui/cancel",
+                    "$image_size": [13,13],
+                    "$button_control": "beacon.button_template",
+                    "anchor_from": "center",
+                    "anchor_to": "left_middle"
+                }
+            },
+            {
+                "ingredient_item@common.container_item":
+                {
+                    "$item_collection_name": "beacon_payment_items",
+                    "offset": [19,0],
+                    "anchor_from": "center",
+                    "anchor_to": "left_middle",
+                    "$background_images": ""
+                }
+            },
+            {
+                "usable_items_panel@beacon.usable_items_panel":
+                {
+                    "offset": [9,2],
+                    "anchor_from": "center",
+                    "anchor_to": "right_middle"
+                }
+            }
+        ]
+    }
+}

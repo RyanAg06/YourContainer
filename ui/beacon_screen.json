@@ -3,29 +3,25 @@
 	/\  /\
 */
 {
-	/* Container Item */
-	"payment_panel/ingredient_item": {"$background_images": ""},
-
-	/* Panel */
-	"beacon_inner_panel":
-	{
-		"texture": "",
-		"controls": [{"button_panel@beacon.button_panel": {}}]
-	},
-
 	/* Beacon */
-	"beacon_panel/root_panel":
+	"beacon_screen@common.inventory_screen_common":
 	{
-		"modifications":
+		"$close_on_player_hurt|default": true,
+		"close_on_player_hurt": "$close_on_player_hurt",
+		"variables":
 		[
 			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": [{"common_panel": {}}],
-				"value": [{"common_panel@common.beacon_panel": {"offset": [0,0.5]}}]
+				"requires": "$desktop_screen",
+				"$screen_content": "beacon_uwu.beacon_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$screen_content": "beacon_pocket.beacon_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
 			}
 		]
-	},
-	"beacon_panel/root_panel/beacon_inventory/inventory_panel_bottom_half": {"$background_images": "","offset": "$beacon_inventory_slots_offset"},
-	"beacon_panel/root_panel/beacon_inventory/hotbar_grid_template": {"$background_images": "","offset": "$beacon_hotbar_offset"}
+	}
 }
