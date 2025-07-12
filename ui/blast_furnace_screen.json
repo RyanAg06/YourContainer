@@ -3,5 +3,6 @@
 	/\  /\
 */
 {
-	"blast_furnace_screen@furnace.furnace_screen": {"$custom_panel": "common.blast_furnace_panel"}
+	/* Blast Furnace */
+	"blast_furnace_screen@furnace.furnace_screen": {"$custom_panel": "blast_furnace_uwu.blast_furnace_panel"}
 }

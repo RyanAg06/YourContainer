@@ -1,39 +1,30 @@
+/*
+ 	\____/\
+ 	/\  /\
+*/
 {
 	"format_version": 2,
 	"header":
 	{
-		"name": "§l§6Your§eContainer",
-		"description": "§lPersonaliza las Interfaces a §b-§l§eTU ESTILO!!§b-§f§l :D",
+		"name": "§l§6Pixora§eGUI",
+		"description": "§lEstilo Nuevo y §b-§l§eUNICO!!§b-§f§l :D",
 		"uuid": "d580fa49-fdcf-4484-8efe-5c39d5559133",
-		"version": [1, 0, 0],
+		"version": [1, 2, 0],
 		"min_engine_version": [1, 16, 0]
 	},
-	"subpacks":
-	[
-		{
-			"folder_name": "vanilla",
-			"name": "Vanilla",
-			"memory_tier": 1
-		},
-		{
-			"folder_name": "your_container",
-			"name": "Your Container",
-			"memory_tier": 1
-		}
-	],
 	"modules":
 	[
 		{
 			"type": "resources",
 			"uuid": "2770d8fa-9aa5-41b9-ba4b-0524b749119d",
-			"version": [1, 0, 0]
+			"version": [1, 1, 0]
 		}
 	],
 	"settings":
 	[
 		{
 		  "type": "label",
-		  "text": "§lEste Modpack Aun Esta en §cDesarrollo§f, por lo que Puede que no Funcione Correctamente. \n\nSi Encuentras Algun Problema, Por Favor, Comunícate \nConmigo: \n\n§bFB: §fRyanAg\n§dIG: §f@ryan_ag06\n§9Pagina: §fhttps://mystuff-ag.vercel.app"
+		  "text": "§lEste Modpack Aun Esta en §cDesarrollo§f, por lo que Puede que no Funcione Correctamente. \n\nSi Encuentras Algun Problema, Por Favor, Comunícate \nConmigo: \n\n§bFB: §fHerrera Brian\n§dIG: §f@ryan_ag06\n§9Pagina: §fhttps://mystuff-ag.vercel.app"
 		}
 	]
 }

@@ -1,0 +1,164 @@
+/*
+ 	\____/\
+ 	/\  /\
+*/
+{
+    "namespace": "smithing_uwu",
+
+    /* Smithing Panel */
+    "smithing_table_panel":
+    {
+        "type": "panel",
+        "controls":
+        [
+            { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+            { "selected_item_details_factory@common.selected_item_details_factory": {} },
+            { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+            {
+                "root_panel@common.root_panel":
+                {
+                    "layer": 1,
+                    "controls":
+                    [
+                        { "common_panel@common.smithing_panel": {"$show_close_button": false} },
+                        {
+                            "smithing_table_screen_inventory":
+                            {
+                                "type": "panel",
+                                "layer": 2,
+                                "controls":
+                                [
+                                    { "top_half_panel@smithing_uwu.top_half_panel": {} },
+                                    { "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {"$background_images": "","offset": [0,3]} },
+                                    { "hotbar_grid@common.hotbar_grid_template": {"$background_images": "","offset": [0,-3]} },
+                                    { "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} }
+                                ]
+                            }
+                        },
+                        { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+                        { "gamepad_cursor@common.gamepad_cursor_button": {} }
+                    ]
+                }
+            },
+            { "flying_item_renderer@common.flying_item_renderer": {"layer": 15} }
+        ]
+    },
+
+    /* Top Panel */
+	"top_half_panel":
+	{
+		"type": "panel",
+		"anchor_from": "top_left",
+		"anchor_to": "top_left",
+		"size": ["100%-14px","50%-14px"],
+		"offset": [7,7],
+		"controls":
+		[
+			/* Hammer Animation */
+			{ "smithing_hammer@animations_uwu.smithing_hammer": {} },
+
+			/* Title */
+			{
+				"upgrade_label@smithing_table.upgrade_label":
+				{
+					"offset": [50,0],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"color": "$title_label_color"
+				}
+			},
+
+			/* Input Panel */
+			{
+				"input_stack_panel":
+				{
+					"size": [54,18],
+					"type": "grid",
+					"grid_dimensions": [3,1],
+					"offset": [0,44],
+					"anchor_from": "top_left",
+					"anchor_to": "top_left",
+					"controls":
+					[
+						/* Template Item */
+						{
+							"template_item_slot@smithing_table_2.smithing_table_item_slot":
+							{
+								"grid_position": [0,0],
+								"$background_images": "",
+								"$item_collection_name": "smithing_table_template_items",
+          						"$cell_overlay_ref": "smithing_table_2.template_overlay_image",
+								"$focus_id_binding_type": "none",
+								"$focus_id": "smithing_table_template",
+								"$focus_override_right_binding_type": "none",
+								"$focus_override_right": "smithing_table_input"
+							}
+						},
+
+						/* Input Item */
+						{
+							"input_item_slot@smithing_table_2.smithing_table_item_slot":
+							{
+								"grid_position": [1,0],
+								"$background_images": "",
+								"$item_collection_name": "smithing_table_input_items",
+								"$cell_overlay_ref": "smithing_table_2.input_overlay_image",
+								"$focus_id_binding_type": "none",
+								"$focus_id": "smithing_table_input",
+								"$focus_override_right_binding_type": "none",
+								"$focus_override_right": "smithing_table_material",
+								"$focus_override_left_binding_type": "none",
+								"$focus_override_left": "smithing_table_template"
+							}
+						},
+
+						/* Material Item */
+						{
+							"material_item_slot@smithing_table_2.smithing_table_item_slot":
+							{
+								"grid_position": [2,0],
+								"$background_images": "",
+								"$item_collection_name": "smithing_table_material_items",
+								"$cell_overlay_ref": "smithing_table_2.material_overlay_image",
+								"$focus_id_binding_type": "none",
+								"$focus_id": "smithing_table_material",
+								"$focus_override_left_binding_type": "none",
+								"$focus_override_left": "smithing_table_input",
+								"$focus_override_right_binding_type": "none",
+								"$focus_override_right": "smithing_table_result"
+							}
+						}
+					]
+				}
+			},
+
+			/* Result Item */
+			{
+				"result_item_slot@smithing_table_2.smithing_table_item_slot":
+				{
+					"$background_images": "",
+					"offset": [18,18.5],
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"$item_collection_name": "smithing_table_result_items",
+					"$button_ref": "smithing_table_2.smithing_table_output_slot_button",
+					"$focus_id_binding_type": "none",
+					"$focus_id": "smithing_table_result",
+					"$focus_override_left_binding_type": "none",
+					"$focus_override_left": "smithing_table_material"
+				}
+			},
+
+			/* Preview Armor Stand */
+			{
+				"armor_stand_renderer@smithing_table_2.result_item_preview_inner":
+				{
+					"anchor_from": "top_right",
+					"anchor_to": "top_right",
+					"size": [25.5,25.5],
+					"offset": [-16,33]
+				}
+			}
+		]
+	}
+}

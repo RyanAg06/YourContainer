@@ -3,112 +3,204 @@
 	/\  /\
 */
 {
-	/* Remove Close Button */
-	"screen_stack_panel":
-	{
-		"modifications":
-		[
-			{
-				"control_name": "toolbar_anchor",
-				"operation": "remove"
-			}
-		]
-	},
-
-	/* Left Panel */
-	"pattern_book_panel@common.root_panel":
-	{
-		"size": [146,166],
-		"controls":
-		[
-			{
-				"bg@common.common_panel":
-				{
-					"$show_close_button": false,
-					"$dialog_background": "loom.pattern_book_bg"
-				}
-			},
-			{
-				"scroll_panel@loom.scroll_panel":
-				{
-					"$scroll_background_image_control": "loom.scroll_panel_bg"
-				}
-			}
-		]
-  	},
-	
-	/* Left Panel Textures */
-	"pattern_book_bg@common.dialog_background_common": {"texture": "textures/gui/sprites/container/loom/pattern_book_bg"},
-	"scroll_panel_bg":
-	{
-		"layer": 2,
-		"type": "image",
-		"texture": "textures/gui/sprites/container/loom/scroll_panel_bg"
-	},
-
-	/* Top Panel */
-	"top_half_panel":
-	{
-		"type": "panel",
-		"controls":
-		[
-			/* Input Slots */
-			{
-				"input_slots_stack_panel":
-				{
-					"type": "panel",
-					"offset": [-10,9],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"size": ["100%c","100%cm"],
-					"controls":
-					[
-						{"input_item_slot@loom.input_item_slot": {"offset": [0,0],"$background_images": ""}},
-						{"dye_item_slot@loom.dye_item_slot": {"offset": [20,0],"$background_images": ""}},
-						{"material_item_slot@loom.material_item_slot": {"offset": [10,19],"$background_images": ""}}
-					]
-				}
-			},
-
-			/* Preview Banner */
-			{
-				"result_banner_outline@loom.banner_outline":
-				{
-					"layer": 1,
-					"size": ["100%c + 2px","100%c + 2px"],
-					"offset": [11,-3],
-					"controls": [ {"result_banner_renderer@loom.result_banner_renderer": {"layer": 1}} ]
-				}
-			},
-
-			/* Result Banner */
-			{
-				"result_item_slot@loom.result_item_slot":
-				{
-					"size": [26,26],
-					"offset": [-5,15],
-					"anchor_from": "top_right",
-					"anchor_to": "top_right",
-					"$background_images": ""
-				}
-			}
-		]
-	},
-
 	/* Loom */
-	"right_panel":
+	"loom_screen@common.inventory_screen_common":
 	{
-		"modifications":
+		"close_on_player_hurt": true,
+		"$screen_bg_content": "common.screen_background",
+		"$screen_background_alpha": 0.4,
+		"button_mappings": "$button_mappings",
+		"variables":
 		[
 			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": {"common_panel": {}},
-				"value": {"common_panel@common.loom_panel": {"offset": [0,-4]}}
+				"requires": "$desktop_screen",
+				"$screen_content": "loom_uwu.loom_panel"
+			},
+			{
+				"requires": "$pocket_screen",
+				"$screen_content": "loom_pocket.loom_panel",
+				"$button_mappings":
+				[
+					{
+						"from_button_id": "button.menu_cancel",
+						"to_button_id": "button.menu_exit",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_inventory_cancel",
+						"to_button_id": "button.menu_exit",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_up",
+						"to_button_id": "button.menu_up",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_down",
+						"to_button_id": "button.menu_down",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_left",
+						"to_button_id": "button.menu_left",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_right",
+						"to_button_id": "button.menu_right",
+						"mapping_type": "global",
+						"scope": "view"
+					},
+					{
+						"from_button_id": "button.menu_select",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.menu_secondary_select",
+						"to_button_id": "button.cursor_drop_one",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.menu_ok",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.controller_back",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed",
+						"ignored": "(not $is_ps4)"
+					},
+					{
+						"from_button_id": "button.controller_select",
+						"to_button_id": "button.cursor_drop_one",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.controller_secondary_select",
+						"to_button_id": "button.cursor_drop_all",
+						"mapping_type": "pressed"
+					},
+					{
+						"from_button_id": "button.menu_tab_left",
+						"to_button_id": "button.left_panel_tab_decrement",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_tab_right",
+						"to_button_id": "button.menu_tab_right",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_alternate_tab_left",
+						"to_button_id": "button.left_panel_tab_increment",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_alternate_tab_right",
+						"to_button_id": "button.menu_alternate_tab_right",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.controller_secondary_select_left",
+						"to_button_id": "button.controller_secondary_select_left",
+						"mapping_type": "global"
+					},
+					{
+						"from_button_id": "button.menu_clear",
+						"to_button_id": "button.menu_clear",
+						"mapping_type": "focused"
+					}
+				]
+			}
+		],
+		"$button_mappings|default":
+		[
+			{
+				"from_button_id": "button.menu_cancel",
+				"to_button_id": "button.menu_exit",
+				"mapping_type": "global"
+			},
+			{
+				"from_button_id": "button.menu_inventory_cancel",
+				"to_button_id": "button.menu_exit",
+				"mapping_type": "global"
+			},
+			{
+				"from_button_id": "button.menu_up",
+				"to_button_id": "button.menu_up",
+				"mapping_type": "global",
+				"scope": "view"
+			},
+			{
+				"from_button_id": "button.menu_down",
+				"to_button_id": "button.menu_down",
+				"mapping_type": "global",
+				"scope": "view"
+			},
+			{
+				"from_button_id": "button.menu_left",
+				"to_button_id": "button.menu_left",
+				"mapping_type": "global",
+				"scope": "view"
+			},
+			{
+				"from_button_id": "button.menu_right",
+				"to_button_id": "button.menu_right",
+				"mapping_type": "global",
+				"scope": "view"
+			},
+			{
+				"from_button_id": "button.menu_select",
+				"to_button_id": "button.cursor_drop_all",
+				"mapping_type": "pressed"
+			},
+			{
+				"from_button_id": "button.menu_secondary_select",
+				"to_button_id": "button.cursor_drop_one",
+				"mapping_type": "pressed"
+			},
+			{
+				"from_button_id": "button.menu_ok",
+				"to_button_id": "button.cursor_drop_all",
+				"mapping_type": "pressed"
+			},
+			{
+				"from_button_id": "button.controller_back",
+				"to_button_id": "button.cursor_drop_all",
+				"mapping_type": "pressed",
+				"ignored": "(not $is_ps4)"
+			},
+			{
+				"from_button_id": "button.controller_select",
+				"to_button_id": "button.cursor_drop_one",
+				"mapping_type": "pressed"
+			},
+			{
+				"from_button_id": "button.controller_secondary_select",
+				"to_button_id": "button.cursor_drop_all",
+				"mapping_type": "pressed"
+			},
+			{
+				"from_button_id": "button.controller_secondary_select_left",
+				"to_button_id": "button.focus_left",
+				"mapping_type": "global"
+			},
+			{
+				"from_button_id": "button.controller_secondary_select_right",
+				"to_button_id": "button.focus_right",
+				"mapping_type": "global"
+			},
+			{
+				"from_button_id": "button.chat",
+				"to_button_id": "button.chat",
+				"mapping_type": "global"
 			}
 		]
-	},
-	"right_panel/loom_screen_inventory/loom_label": {"color": "$title_label_color","offset": [1,3]},
-	"right_panel/loom_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$loom_inventory_offset"},
-	"right_panel/loom_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$loom_hotbar_offset"}
+	}
 }

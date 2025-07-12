@@ -1,0 +1,94 @@
+/*
+	\____/\
+	/\  /\
+*/
+{
+    "namespace": "redstone_uwu",
+
+    /* Titles */
+    "item_dropper_label":
+    {
+        "type": "label",
+        "offset": [0,9],
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "color": "$title_label_color",
+        "text": "$container_title",
+        "layer": 2
+    },
+    "hopper_label@item_dropper_label":
+    {
+        "offset": [8,8],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left"
+    },
+    "dispenser_label@item_dropper_label": {},
+    "crafter_label@item_dropper_label": {"offset": [0,8]},
+    "dropper_label@item_dropper_label": {},
+
+    /* Panel */
+    "panel":
+    {
+        "type": "panel",
+        "controls":
+        [
+            { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+            { "selected_item_details_factory@common.selected_item_details_factory": {} },
+            { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+            {
+                "root_panel@common.root_panel":
+                {
+                    "layer": 1,
+                    "size": "$screen_dimensions",
+                    "controls":
+                    [
+                        { "common_panel@$custom_panel": {} },
+                        {
+                            "redstone_screen_inventory":
+                            {
+                                "type": "panel",
+                                "layer": 5,
+                                "controls":
+                                [
+                                    { "red_panel@redstone_uwu.redstone_panel_top_half": {} },
+                                    { "red_bottom_half@common.inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$inventory_offset"} },
+                                    { "hotbar_grid@common.hotbar_grid_template": {"$background_images": "","offset": "$hotbar_offset"} },
+                                    { "red_hold_icon@common.inventory_take_progress_icon_button": {} }
+                                ]
+                            }
+                        },
+                        { "red_icon@common.inventory_selected_icon_button": {} },
+                        { "gamepad_cursor@common.gamepad_cursor_button": {} },
+                        { "$screen_label@$screen_label": {} }
+                    ]
+                }
+            },
+            { "flying_item_renderer@common.flying_item_renderer": { "layer": 21 } }
+        ]
+    },
+
+    /* Top Panel */
+    "redstone_panel_top_half":
+    {
+        "type": "panel",
+        "size": ["100%","50%-12px"],
+        "offset": [0,7],
+        "anchor_to": "top_left",
+        "anchor_from": "top_left",
+        "controls": [ {"redstone_input_grid@redstone_uwu.redstone_input_grid": {}} ]
+    },
+
+    /* Container Item */
+    "redstone_input_grid":
+    {
+        "$background_images": "",
+        "type": "grid",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "offset": "$grid_offset",
+        "grid_dimensions": "$grid_dimensions",
+        "collection_name": "container_items",
+        "grid_item_template": "common.container_item",
+        "$item_collection_name": "container_items"
+    }
+}

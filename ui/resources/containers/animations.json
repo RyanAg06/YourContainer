@@ -1,0 +1,277 @@
+/*
+ 	\____/\
+ 	/\  /\
+*/
+{
+    "namespace": "animations_uwu",
+
+    /* Base */
+    "anim_uv_base":
+    {
+        "anim_type": "uv",
+        "next": "$next_frame", 
+        "from": "$uv_frame",
+        "to": "$uv_frame",
+        "duration": 0.1
+    },
+
+    /* Cabalo Ag */
+    "cabalo_ag":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [17,11],
+        "offset": [-6,-10],
+        "anchor_from": "middle",
+        "anchor_to": "middle",
+        "uv": "@animations_uwu.cabalo_00",
+        "uv_size": [17,11],
+        "disable_anim_fast_forward": true,
+        "texture": "textures/gui/container/gif/cabalo_ag"
+    },
+    "cabalo_00@animations_uwu.anim_uv_base": {"$uv_frame": [ 0,0],"$next_frame":"@animations_uwu.cabalo_01","duration": 10},
+    "cabalo_01@animations_uwu.anim_uv_base": {"$uv_frame": [17,0],"$next_frame":"@animations_uwu.cabalo_02","duration": 0.3},
+    "cabalo_02@animations_uwu.anim_uv_base": {"$uv_frame": [ 0,0],"$next_frame":"@animations_uwu.cabalo_03","duration": 0.3},
+    "cabalo_03@animations_uwu.anim_uv_base": {"$uv_frame": [17,0],"$next_frame":"@animations_uwu.cabalo_04","duration": 0.3},
+    "cabalo_04@animations_uwu.anim_uv_base": {"$uv_frame": [ 0,0],"$next_frame":"@animations_uwu.cabalo_05","duration": 0.3},
+    "cabalo_05@animations_uwu.anim_uv_base": {"$uv_frame": [17,0],"$next_frame":"@animations_uwu.cabalo_06","duration": 0.3},
+    "cabalo_06@animations_uwu.anim_uv_base": {"$uv_frame": [ 0,0],"$next_frame":"@animations_uwu.cabalo_07","duration": 10},
+    "cabalo_07@animations_uwu.anim_uv_base": {"$uv_frame": [34,0],"$next_frame":"@animations_uwu.cabalo_00","duration": 1},
+
+    /* Anvil Hammer */
+    "anvil_hammer":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [38,38],
+        "offset": [5,1],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 35,
+            "frame_step": 0,
+            "fps": 14,
+            "easing": "linear"
+        },
+        "uv_size": [38,38],
+        "texture": "textures/gui/container/gif/anvil_hammer"
+    },
+
+    /* Fox */
+    "fox":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [23,20],
+        "offset": [-7,-5],
+        "anchor_to": "bottom_right",
+        "anchor_from": "bottom_right",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 11,
+            "frame_step": 0,
+            "fps": 6,
+            "easing": "linear"
+        },
+        "uv_size": [23,20],
+        "texture": "textures/gui/container/gif/snow_fox"
+    },
+
+    /* Enchant */
+    "enchant":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [16,16],
+        "offset": [15,51],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 8,
+            "frame_step": 0,
+            "fps": 8,
+            "easing": "linear"
+        },
+        "uv_size": [16,16],
+        "texture": "textures/gui/container/gif/enchant"
+    },
+
+    /* Ender Eye */
+    "ender_eye":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [10,10],
+        "offset": [83,-2],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "uv": "@animations_uwu.ender_eye_00",
+        "uv_size": [10,10],
+        "disable_anim_fast_forward": true,
+        "texture": "textures/gui/container/gif/ender_eye"
+    },
+    "ender_eye_00@animations_uwu.anim_uv_base": {"$uv_frame": [0, 0],"$next_frame":"@animations_uwu.ender_eye_01","duration": 2},
+    "ender_eye_01@animations_uwu.anim_uv_base": {"$uv_frame": [0,30],"$next_frame":"@animations_uwu.ender_eye_02","duration": 0.2},
+    "ender_eye_02@animations_uwu.anim_uv_base": {"$uv_frame": [0,40],"$next_frame":"@animations_uwu.ender_eye_03"},
+    "ender_eye_03@animations_uwu.anim_uv_base": {"$uv_frame": [0,30],"$next_frame":"@animations_uwu.ender_eye_04","duration": 0.2},
+    "ender_eye_04@animations_uwu.anim_uv_base": {"$uv_frame": [0, 0],"$next_frame":"@animations_uwu.ender_eye_05","duration": 0.1},
+    "ender_eye_05@animations_uwu.anim_uv_base": {"$uv_frame": [0,50],"$next_frame":"@animations_uwu.ender_eye_06","duration": 0.2},
+    "ender_eye_06@animations_uwu.anim_uv_base": {"$uv_frame": [0,60],"$next_frame":"@animations_uwu.ender_eye_07"},
+    "ender_eye_07@animations_uwu.anim_uv_base": {"$uv_frame": [0,70],"$next_frame":"@animations_uwu.ender_eye_08","duration": 0.2},
+    "ender_eye_08@animations_uwu.anim_uv_base": {"$uv_frame": [0,20],"$next_frame":"@animations_uwu.ender_eye_09","duration": 0.2},
+    "ender_eye_09@animations_uwu.anim_uv_base": {"$uv_frame": [0,10],"$next_frame":"@animations_uwu.ender_eye_10","duration": 0.2},
+    "ender_eye_10@animations_uwu.anim_uv_base": {"$uv_frame": [0, 0],"$next_frame":"@animations_uwu.ender_eye_11","duration": 3},
+    "ender_eye_11@animations_uwu.anim_uv_base": {"$uv_frame": [0,80],"$next_frame":"@animations_uwu.ender_eye_00","duration": 2},
+
+    /* Smithing Hammer */
+    "smithing_hammer":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [38,38],
+        "offset": [5,1],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 35,
+            "frame_step": 0,
+            "fps": 14,
+            "easing": "linear"
+        },
+        "uv_size": [38,38],
+        "texture": "textures/gui/container/gif/smithing_hammer"
+    },
+
+    /* Magma Cube */
+    "magma_cube":
+    {
+        "$fps": 4,
+        "layer": 2,
+        "type": "image",
+        "size": [9,16],
+        "offset": [-26,-10],
+        "anchor_from": "right_middle",
+        "anchor_to": "right_middle",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 9,
+            "frame_step": 0,
+            "fps": "$fps",
+            "easing": "linear"
+        },
+        "uv_size": [9,16],
+        "texture": "textures/gui/container/gif/magma"
+    },
+
+    /* Bee */
+    "bee":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [17,18],
+        "offset": [45,8],
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 9,
+            "frame_step": 0,
+            "fps": 6,
+            "easing": "linear"
+        },
+        "uv_size": [17,18],
+        "texture": "textures/gui/container/gif/bee"
+    },
+
+    /* Map */
+    "map":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [17,15],
+        "offset": [-40,27.5],
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "uv":
+        {
+            "anim_type": "flip_book",
+            "initial_uv": [0,0],
+            "frame_count": 15,
+            "frame_step": 0,
+            "fps": 8,
+            "easing": "linear"
+        },
+        "uv_size": [17,15],
+        "texture": "textures/gui/container/gif/map"
+    },
+
+    /* Compass */
+    "compass":
+    {
+        "layer": 2,
+        "type": "image",
+        "size": [21,21],
+        "offset": [-7,6],
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "uv": "@animations_uwu.compass_00",
+        "uv_size": [21,21],
+        "disable_anim_fast_forward": true,
+        "texture": "textures/gui/container/gif/compass"
+    },
+    "compass_00@animations_uwu.anim_uv_base": {"$uv_frame": [0,  0],"$next_frame": "@animations_uwu.compass_01","duration": 2},
+    "compass_01@animations_uwu.anim_uv_base": {"$uv_frame": [0, 21],"$next_frame": "@animations_uwu.compass_02"},
+    "compass_02@animations_uwu.anim_uv_base": {"$uv_frame": [0, 42],"$next_frame": "@animations_uwu.compass_03","duration": 0.2},
+    "compass_03@animations_uwu.anim_uv_base": {"$uv_frame": [0, 63],"$next_frame": "@animations_uwu.compass_04","duration": 0.3},
+    "compass_04@animations_uwu.anim_uv_base": {"$uv_frame": [0, 42],"$next_frame": "@animations_uwu.compass_05","duration": 0.2},
+    "compass_05@animations_uwu.anim_uv_base": {"$uv_frame": [0, 21],"$next_frame": "@animations_uwu.compass_06"},
+    "compass_06@animations_uwu.anim_uv_base": {"$uv_frame": [0,  0],"$next_frame": "@animations_uwu.compass_07"},
+    "compass_07@animations_uwu.anim_uv_base": {"$uv_frame": [0,147],"$next_frame": "@animations_uwu.compass_08"},
+    "compass_08@animations_uwu.anim_uv_base": {"$uv_frame": [0,168],"$next_frame": "@animations_uwu.compass_09"},
+    "compass_09@animations_uwu.anim_uv_base": {"$uv_frame": [0,189],"$next_frame": "@animations_uwu.compass_10"},
+    "compass_10@animations_uwu.anim_uv_base": {"$uv_frame": [0,210],"$next_frame": "@animations_uwu.compass_11","duration": 0.2},
+    "compass_11@animations_uwu.anim_uv_base": {"$uv_frame": [0,189],"$next_frame": "@animations_uwu.compass_12"},
+    "compass_12@animations_uwu.anim_uv_base": {"$uv_frame": [0,168],"$next_frame": "@animations_uwu.compass_13"},
+    "compass_13@animations_uwu.anim_uv_base": {"$uv_frame": [0,147],"$next_frame": "@animations_uwu.compass_14"},
+    "compass_14@animations_uwu.anim_uv_base": {"$uv_frame": [0,  0],"$next_frame": "@animations_uwu.compass_15"},
+    "compass_15@animations_uwu.anim_uv_base": {"$uv_frame": [0, 21],"$next_frame": "@animations_uwu.compass_16"},
+    "compass_16@animations_uwu.anim_uv_base": {"$uv_frame": [0, 42],"$next_frame": "@animations_uwu.compass_17"},
+    "compass_17@animations_uwu.anim_uv_base": {"$uv_frame": [0, 63],"$next_frame": "@animations_uwu.compass_18"},
+    "compass_18@animations_uwu.anim_uv_base": {"$uv_frame": [0, 84],"$next_frame": "@animations_uwu.compass_19"},
+    "compass_19@animations_uwu.anim_uv_base": {"$uv_frame": [0,105],"$next_frame": "@animations_uwu.compass_20","duration": 0.2},
+    "compass_20@animations_uwu.anim_uv_base": {"$uv_frame": [0,126],"$next_frame": "@animations_uwu.compass_21","duration": 0.3},
+    "compass_21@animations_uwu.anim_uv_base": {"$uv_frame": [0,105],"$next_frame": "@animations_uwu.compass_22","duration": 0.2},
+    "compass_22@animations_uwu.anim_uv_base": {"$uv_frame": [0, 84],"$next_frame": "@animations_uwu.compass_23"},
+    "compass_23@animations_uwu.anim_uv_base": {"$uv_frame": [0, 63],"$next_frame": "@animations_uwu.compass_24"},
+    "compass_24@animations_uwu.anim_uv_base": {"$uv_frame": [0, 42],"$next_frame": "@animations_uwu.compass_25"},
+    "compass_25@animations_uwu.anim_uv_base": {"$uv_frame": [0, 21],"$next_frame": "@animations_uwu.compass_26"},
+    "compass_26@animations_uwu.anim_uv_base": {"$uv_frame": [0,  0],"$next_frame": "@animations_uwu.compass_27"},
+    "compass_27@animations_uwu.anim_uv_base": {"$uv_frame": [0,147],"$next_frame": "@animations_uwu.compass_28"},
+    "compass_28@animations_uwu.anim_uv_base": {"$uv_frame": [0,168],"$next_frame": "@animations_uwu.compass_29"},
+    "compass_29@animations_uwu.anim_uv_base": {"$uv_frame": [0,189],"$next_frame": "@animations_uwu.compass_30"},
+    "compass_30@animations_uwu.anim_uv_base": {"$uv_frame": [0,210],"$next_frame": "@animations_uwu.compass_31","duration": 0.2},
+    "compass_31@animations_uwu.anim_uv_base": {"$uv_frame": [0,189],"$next_frame": "@animations_uwu.compass_32"},
+    "compass_32@animations_uwu.anim_uv_base": {"$uv_frame": [0,168],"$next_frame": "@animations_uwu.compass_33"},
+    "compass_33@animations_uwu.anim_uv_base": {"$uv_frame": [0,147],"$next_frame": "@animations_uwu.compass_34"},
+    "compass_34@animations_uwu.anim_uv_base": {"$uv_frame": [0,  0],"$next_frame": "@animations_uwu.compass_35"},
+    "compass_35@animations_uwu.anim_uv_base": {"$uv_frame": [0, 21],"$next_frame": "@animations_uwu.compass_36"},
+    "compass_36@animations_uwu.anim_uv_base": {"$uv_frame": [0, 42],"$next_frame": "@animations_uwu.compass_37","duration": 0.2},
+    "compass_37@animations_uwu.anim_uv_base": {"$uv_frame": [0, 21],"$next_frame": "@animations_uwu.compass_38"},
+    "compass_38@animations_uwu.anim_uv_base": {"$uv_frame": [0,  0],"$next_frame": "@animations_uwu.compass_39","duration": 0.2},
+    "compass_39@animations_uwu.anim_uv_base": {"$uv_frame": [0,147],"$next_frame": "@animations_uwu.compass_00","duration": 0.2}
+}

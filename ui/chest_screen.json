@@ -3,53 +3,74 @@
 	/\  /\
 */
 {
-	/* Title */
-	"chest_label": {"color": "$title_label_color"},
+    /* Small Chest */
+    "small_chest_screen@common.inventory_screen_common":
+    {
+        "$close_on_player_hurt|default": true,
+        "$use_custom_pocket_toast|default": false,
+        "close_on_player_hurt": "$close_on_player_hurt",
+        "use_custom_pocket_toast": "$use_custom_pocket_toast",
+        "variables":
+        [
+            {
+                "requires": "$desktop_screen",
+                "$screen_content": "chest_uwu.small_chest_panel",
+                "$screen_bg_content": "common.screen_background",
+                "$screen_background_alpha": 0.4
+            },
+            {
+                "requires": "$pocket_screen",
+                "$use_custom_pocket_toast": true,
+                "$screen_content": "pocket_containers.small_chest_panel"
+            }
+        ]
+    },
+    
+    /* Large Chest */
+    "large_chest_screen@common.inventory_screen_common":
+    {
+        "$close_on_player_hurt|default": true,
+        "$use_custom_pocket_toast|default": false,
+        "close_on_player_hurt": "$close_on_player_hurt",
+        "use_custom_pocket_toast": "$use_custom_pocket_toast",
+        "variables":
+        [
+            {
+                "requires": "$desktop_screen",
+                "$screen_content": "large_chest_uwu.large_chest_panel",
+                "$screen_bg_content": "common.screen_background",
+                "$screen_background_alpha": 0.4
+            },
+            {
+                "requires": "$pocket_screen",
+                "$use_custom_pocket_toast": true,
+                "$screen_content": "pocket_containers.large_chest_panel"
+            }
+        ]
+    },
 
-	/* Item Container */
-	"chest_grid_item@common.container_item":
-	{
-		"$background_images": "",
-		"$item_collection_name": "container_items"
-	},
-	
-	/* Small Chest */
-	"small_chest_panel": {"$custom_panel": "common.small_chest_panel"},
-	"small_chest_panel/root_panel":
-	{
-		"modifications":
-		[
-			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": [{"common_panel@common.common_panel": {} }],
-				"value": [{"common_panel@$custom_panel": {} }]
-			}
-		]
-	},
-	"small_chest_panel/root_panel/chest_panel/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$small_chest_inventory_offset"},
-	"small_chest_panel/root_panel/chest_panel/hotbar_grid": {"$background_images": "","offset": "$small_chest_hotbar_offset"},
-	
-	/* Large Chest */
-	"large_chest_panel/root_panel":
-	{
-		"modifications":
-		[
-			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": [{"common_panel@common.common_panel": {} }],
-				"value": [{"common_panel@common.large_chest_panel": {} }]
-			}
-		]
-	},
-	"large_chest_panel/root_panel/chest_panel/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$large_chest_inventory_offset"},
-	"large_chest_panel/root_panel/chest_panel/hotbar_grid": {"$background_images": "","offset": "$large_chest_hotbar_offset"},
-	
-	/* Ender Chest */
-	"ender_chest_panel@chest.small_chest_panel": {"$custom_panel": "common.ender_chest_panel"},
-	/* Shulker Box */
-	"shulker_box_panel@chest.small_chest_panel": {"$custom_panel": "common.shulker_box_panel"},
-	/* Barrel */
-	"barrel_panel@chest.small_chest_panel": {"$custom_panel": "common.barrel_panel"}
+    /* Ender Chest */
+    "ender_chest_panel@ender_chest_uwu.ender_chest_panel": {},
+    /* Shulker Box */
+    "shulker_box_panel@shulker_uwu.shulker_panel": {},
+    /* Barrel */
+    "barrel_screen@chest.small_chest_screen":
+    {
+        "$close_on_player_hurt": true,
+        "$use_custom_pocket_toast|default": false,
+        "variables":
+        [
+            {
+                "requires": "$desktop_screen",
+                "$screen_content": "barrel_uwu.barrel_panel",
+                "$screen_bg_content": "common.screen_background",
+                "$screen_background_alpha": 0.4
+            },
+            {
+                "requires": "$pocket_screen",
+                "$use_custom_pocket_toast": true,
+                "$screen_content": "pocket_containers.barrel_panel"
+            }
+        ]
+    }
 }

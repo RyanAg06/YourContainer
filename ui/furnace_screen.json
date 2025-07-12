@@ -3,156 +3,26 @@
 	/\  /\
 */
 {
-	/* Top Panel */
-	"furnace_panel_top_half":
-	{
-		"type": "panel",
-		"controls":
-		[
-			/* Title */
-			{
-				"title_label@furnace.furnace_label":
-				{
-					"offset": [0,1],
-					"color": "$title_label_color"
-				}
-			},
-
-			/* Ingredient */
-			{
-				"furnace_ingredient_item@common.container_item":
-				{
-					"size": [18,18],
-					"offset": [55,13],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"$background_images": "",
-					"$item_collection_name": "furnace_ingredient_items",
-					"$focus_id": "furnace_ingredient_item",
-					"$focus_override_left": "FOCUS_OVERRIDE_STOP",
-					"$focus_override_left_binding_type": "none",
-					"$focus_override_up": "FOCUS_OVERRIDE_STOP",
-					"$focus_override_up_binding_type": "none"
-				}
-			},
-
-			/* Lit Progress */
-			{
-				"lit_progress":
-				{
-					"type": "panel",
-					"size": [13,13],
-					"offset": [57,34],
-					"anchor_to": "top_left",
-					"anchor_from": "top_left",
-					"controls":
-					[
-						{
-							"texture":
-							{
-								"type": "image",
-								"size": ["100%","100%"],
-								"texture": "textures/ui/flame_full_image",
-								"clip_direction": "down",
-								"bindings":
-								[
-									{
-										"binding_name": "#furnace_flame_ratio",
-										"binding_name_override": "#clip_ratio",
-										"binding_condition": "always"
-									}
-								]
-							}
-						}
-					]
-				}
-			},
-
-			/* Fuel */
-			{
-				"furnace_fuel_item@common.container_item":
-				{
-					"size": [18,18],
-					"offset": [55,49],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"$background_images": "",
-					"$item_collection_name": "furnace_fuel_items",
-					"$focus_id": "furnace_fuel_item",
-					"$focus_override_right": "furnace_output_item",
-					"$focus_override_right_binding_type": "none",
-					"$focus_override_left": "FOCUS_OVERRIDE_STOP",
-					"$focus_override_left_binding_type": "none"
-				}
-			},
-
-			/* Arrow Progress */
-			{
-				"burn_progress":
-				{
-					"type": "panel",
-					"size":[22,15],
-					"offset": [80,32],
-					"anchor_to": "top_left",
-					"anchor_from": "top_left",
-					"controls":
-					[
-						{
-							"texture":
-							{
-								"type": "image",
-								"size": ["100%","100%"],
-								"texture": "textures/ui/arrow_active",
-								"clip_direction": "left",
-								"bindings":
-								[
-									{
-										"binding_name": "#furnace_arrow_ratio",
-										"binding_name_override": "#clip_ratio",
-										"binding_condition": "always"
-									}
-								]
-							}
-						}
-					]
-				}
-			},
-
-			/* Output */
-			{
-				"furnace_output_item@common.container_item":
-				{
-					"size": [26,26],
-					"offset": [-39,27],
-					"anchor_from": "top_right",
-					"anchor_to": "top_right",
-					"$background_images": "",
-					"$item_collection_name": "furnace_output_items",
-					"$focus_id": "furnace_output_item",
-					"$focus_override_right_binding_type": "none",
-					"$focus_override_right": "FOCUS_OVERRIDE_STOP",
-					"$focus_override_left_binding_type": "none",
-					"$focus_override_left": "furnace_fuel_item"
-				}
-			}
-		]
-	},
-
 	/* Furnace */
-	"furnace_screen": {"$custom_panel": "common.furnace_panel"},
-	"furnace_panel/root_panel":
+	"furnace_screen@common.inventory_screen_common":
 	{
-		"modifications":
+		"$custom_panel": "furnace_uwu.furnace_panel",
+		"$close_on_player_hurt|default": true,
+		"close_on_player_hurt": "$close_on_player_hurt",
+		"variables":
 		[
 			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": {"common_panel": {}},
-				"value": {"common_panel@$custom_panel": {}}
+				"requires": "$desktop_screen",
+				"$screen_content": "$custom_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$screen_content": "furnace_pocket.furnace_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
 			}
 		]
-	},
-	"furnace_panel/root_panel/furnace_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$furnace_inventory_offset"},
-	"furnace_panel/root_panel/furnace_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$furnace_hotbar_offset"}
-  }
-  
+	}
+}

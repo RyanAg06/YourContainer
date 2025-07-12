@@ -3,136 +3,25 @@
 	/\  /\
 */
 {
-	/* Enchants Slots */
-	"dark_background@enchanting.enchanting_image": {"texture": ""},
-	"dark_background_with_hover_text@enchanting.background_with_hover_text": {"texture": ""},
-	"active_background@enchanting.enchanting_image": {"texture": ""},
-	"active_background_with_hover_text@enchanting.background_with_hover_text": {"texture": ""},
-
-	/* Top Panel */
-	"enchanting_panel_top_half":
-	{
-		"type": "panel",
-		"anchor_to": "top_left",
-		"anchor_from": "top_left",
-		"controls":
-		[
-			/* Title */
-			{
-				"enchanting_label@enchanting.enchanting_label":
-				{
-					"offset": [30,0],
-					"color": "$title_label_color"
-				}
-			},
-
-			/* Book */
-			{
-				"enchanting_book_panel":
-				{
-					"type": "panel",
-					"size": [40,40],
-					"offset": [13,6],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"controls":
-					[
-						{
-							"enchanting_book":
-							{
-								"layer": 13,
-								"type": "custom",
-								"renderer": "enchanting_book_renderer",
-								"animation_reset_name": "screen_animation_reset",
-								"anims":
-								[
-									"@common.screen_exit_size_animation_push",
-									"@common.screen_exit_size_animation_pop",
-									"@common.screen_entrance_size_animation_push",
-									"@common.screen_entrance_size_animation_pop"
-								],
-								"bindings": [{"binding_name": "#open","binding_type": "global"}]
-							}
-						}
-					]
-				}
-			},
-
-			/* Input Item */
-			{
-				"item_grid@common.container_item":
-				{
-					"offset": [14,43],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"$background_images": "",
-					"$item_collection_name": "enchanting_input_items"
-				}
-			},
-
-			/* Lapis Slot */
-			{
-				"lapis_grid@common.container_item":
-				{
-					"offset": [34,43],
-					"anchor_from": "top_left",
-					"anchor_to": "top_left",
-					"$background_images": "",
-					"$item_collection_name": "enchanting_lapis_items"
-				}
-			},
-
-			/* Enchants Panel */
-			{
-				"grid_panel":
-				{
-					"type": "panel",
-					"size": [108,59],
-					"offset": [-8,10],
-					"anchor_from": "top_right",
-					"anchor_to": "top_right",
-					"controls":
-					[
-						{
-							"dust_panel@enchanting.dust_panel":
-							{
-								"layer": 10,
-								"anchor_from": "top_left",
-								"anchor_to": "top_left"
-							}
-						},
-						{
-							"enchantments_grid":
-							{
-								"layer": 2,
-								"type": "grid",
-								"size": ["100%","100%"],
-								"anchor_from": "center",
-								"anchor_to": "center",
-								"grid_dimensions": [1,3],
-								"collection_name": "#enchant_buttons",
-								"grid_item_template": "enchanting.enchant_button_panel"
-							}
-						}
-					]
-				}
-			}
-		]
-	},
-
 	/* Enchanting Table */
-	"enchanting_panel/root_panel":
+	"enchanting_screen@common.inventory_screen_common":
 	{
-		"modifications":
+		"$close_on_player_hurt|default": true,
+		"close_on_player_hurt": "$close_on_player_hurt",
+		"variables":
 		[
 			{
-				"control_name": "common_panel",
-				"operation": "replace",
-				"where": {"common_panel": {}},
-				"value": {"common_panel@common.enchanting_panel": {}}
+				"requires": "$desktop_screen",
+				"$screen_content": "enchanting_uwu.enchanting_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
+			},
+			{
+				"requires": "$pocket_screen",
+				"$screen_content": "enchanting_pocket.enchanting_panel",
+				"$screen_bg_content": "common.screen_background",
+				"$screen_background_alpha": 0.4
 			}
 		]
-	},
-	"enchanting_panel/root_panel/enchanting_screen_inventory/inventory_panel_bottom_half_with_label": {"$background_images": "","offset": "$enchant_inventory_offset"},
-	"enchanting_panel/root_panel/enchanting_screen_inventory/hotbar_grid": {"$background_images": "","offset": "$enchant_hotbar_offset"}
+	}
 }
